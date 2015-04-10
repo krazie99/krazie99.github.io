@@ -1,11 +1,10 @@
 # Harmony Jekyll theme general configurations 
 
 # Base URL
-baseurl: 
+baseurl: /harmony
 
 # Site live URL
 url: http://krazie99.github.io
-
 
 # Localhost 
 # url: http://127.0.0.1:4000  
@@ -14,7 +13,7 @@ url: http://krazie99.github.io
 harmony:
   name: NB APPS
   # Little description about your site
-  description: Welcome to NBs Blog. iOS Developer ;D
+  description: Welcome to NB's Blog. iOS Developer ;D
   # 'meta_description:' Write an awesome description for your new site here.
   # It will appear in your document head meta (for Google search results) and 
   # in your feed.xml site description.

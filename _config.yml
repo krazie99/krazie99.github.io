@@ -35,22 +35,22 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
+  name: Sunny Choi
   avatar: avatar.jpg
-  job: "PHP & Ruby Developer"
-  bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-  email:
+  job: "iOS Developer"
+  bio: "Objective-C and Swift Developer in Republic of Korea."
+  email: krazie99@gmail.com
   disqus-shortname:
-  twitter: #username
-  facebook: #username
+  twitter: krazie99
+  facebook: krazie99
   google:
-    plus: #username
+    plus: krazie99
     analytics:
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
+  github: krazie99
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   xing: #username

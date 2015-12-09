@@ -1,64 +1,68 @@
-# Harmony Jekyll theme general configurations 
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: Leonids
+email: 
+description: A simple and awesome blog theme powered by jekyll.
+# the base hostname & protocol for your site
+# If your project is placed in https://github.com/yourname/yourname.github.io at master branch
+# Then, the 'url' is: http://yourname.github.io
+# If your project is placed in another repository as a gh-pages branch, like: https://github.com/yourname/projectname
+# Then, the 'url' is: http://yourname.github.io/projectname
+url: 
 
-# Base URL
-baseurl: 
-
-# Site live URL
-url: http://krazie99.github.io
-
-# Localhost 
-# url: http://127.0.0.1:4000  
-
-# Harmony theme configuration. Please change accordingly.
-harmony:
-  name: NB APPS
-  # Little description about your site
-  description: Welcome to NB＊s Blog. iOS Developer ;D
-  # 'meta_description:' Write an awesome description for your new site here.
-  # It will appear in your document head meta (for Google search results) and 
-  # in your feed.xml site description.
-  meta_description: > # 
-   Harmony is a free responsive jekyll theme by Gayan Virajith
-   and Maheshika Lakmali. Sourced on Github - 
-   https://github.com/gayanvirajith/harmony
-  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
-  author: # Author details
-    name: Gayan Virajith
-    email: gayanvirajith@gmail.com
-    url: http://gayanvirajith.github.io
-
-  # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-xxxx-x
-
-  # Profile links, leave blank to ignore
-  social: 
-    github: krazie99
-    twitter: krazie99
-    facebook: krazie99
-    gplus: +SunnyChoi99
-    dribble: 
-    pinterest: 
-  # Toggle disclaimer in footer
-  show_disclaimer: true
-
-# Conversion / Build settings 
+#
+###################################
+# Jekyll configuration
+####################################
+#
 markdown:    kramdown
-# This is how you put pygments config in jekyll 2.0 instead of pygments: true
-highlighter: pygments 
+highlighter:  pygments
+excerpt_separator: <!--more-->
 
-# Permalinks
-permalink:        pretty
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 
-exclude: 
-  - CNAME
-  - Gemfile
-  - Rakefile
-  - README.md
-  - .gitignore
-  - .sass-cache
-  - Gemfile.lock
-
-# Sass conversion configs
-sass:
-    sass_dir: assets/css/_sass
-    style: :compressed
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: Leonids
+  avatar: avatar.jpg
+  job: "PHP & Ruby Developer"
+  bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+  email:
+  disqus-shortname:
+  twitter: #username
+  facebook: #username
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username

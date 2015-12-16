@@ -6,6 +6,7 @@ modified: 2013-05-31
 tags: [intro, beginner, jekyll, tutorial]
 comments: true
 pinned: true
+categories: [portfolio]
 image:
   feature: sample-image-2.jpg
   creditlink: https://unsplash.com/photos/Ki0dpxd3LGc

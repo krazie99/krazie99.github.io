@@ -3,15 +3,16 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
+title: SunnyApps
 email: 
-description: A simple and awesome blog theme powered by jekyll.
+description: Sunny Choi
+categories: [portfolio]
 # the base hostname & protocol for your site
 # If your project is placed in https://github.com/yourname/yourname.github.io at master branch
 # Then, the 'url' is: http://yourname.github.io
 # If your project is placed in another repository as a gh-pages branch, like: https://github.com/yourname/projectname
 # Then, the 'url' is: http://yourname.github.io/projectname
-url: 
+url: http://krazie99.github.io
 
 #
 ###################################
@@ -36,9 +37,9 @@ kramdown:
 #
 owner:
   name: Sunny Choi
-  avatar: avatar.jpg
+  avatar: sunny.png
   job: "iOS Developer"
-  bio: "Objective-C and Swift Developer in Republic of Korea."
+  bio: "Objective-C and Swift"
   email: krazie99@gmail.com
   disqus-shortname:
   twitter: krazie99

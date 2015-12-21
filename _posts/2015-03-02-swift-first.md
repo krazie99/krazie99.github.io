@@ -1,8 +1,8 @@
 ---
 layout: post
-title: XCode Test Case (Swift)
-excerpt: "XCode에서 iOS 테스트 케이스 작성 하기"
-tags: [ios, objective-c, xctext, test, test-case, swift]
+title: objective-c 개발자의 Swift 맛보기 (Swift)
+excerpt: "Swift 기본 문법"
+tags: [ios, objective-c, swift]
 ---
 
 # 시작하며

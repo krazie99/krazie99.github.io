@@ -5,7 +5,7 @@ excerpt: "Swift 기본 문법"
 tags: [ios, objective-c, swift]
 ---
 
-# 시작하며
+# 시작하며ㄴ
 
 Objective-C 개발자의 Swift의 간단한 어플 개발에 대한 글을 적으려고 합니다.
 
@@ -180,13 +180,11 @@ Swift에 더 자세한 정보를 얻으시려면 [레퍼런스 문서]를 참고
 
 감사합니다.
 
-
 [추론 데이터 형식]: http://en.wikipedia.org/wiki/Type_inference
 [스위프트(Swift)]: https://developer.apple.com/swift/
 [GitHub]: https://github.com/krazie99/swift_webview
 [레퍼런스 문서]: https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/index.html
 
-
-[^1]: (버즈니 블로그)[http://engineering.buzzni.com/2015/03/02/swift_first.html]
+[^1]: [버즈니 블로그](http://engineering.buzzni.com/2015/03/02/swift_first.html)
 [^2]: Swift에서의 nil은 모든 타입에 대한 '값이 없다'를 나타냄
 [^3]: forced-unwrapping operator

@@ -1,11 +1,9 @@
 ---
 layout: post
-title: objective-c 개발자의 Swift 맛보기 (Swift)
+title: objective-c 개발자의 Swift 맛보기
 excerpt: "Swift 기본 문법"
 tags: [ios, objective-c, swift]
 ---
-
-# 시작하며ㄴ
 
 Objective-C 개발자의 Swift의 간단한 어플 개발에 대한 글을 적으려고 합니다.
 
@@ -13,11 +11,9 @@ Objective-C 개발자의 Swift의 간단한 어플 개발에 대한 글을 적�
 
 이 새로운 언어를 가지고 웹뷰를 이용한 간단한 앱을 만들도록 하겠습니다 :)
 
-*해당 글은 제가 버즈니에서 근무할 때 적은 글[^1]입니다*
+***해당 글은 제가 버즈니에서 근무할 때 적은 글[^1]입니다***
 
 # 기본 Swift 문법
-
-
 ### 변수,상수 & 문자열
 
 새로운 언어인 Swift는 [추론 데이터 형식] - 함수형 언어 입니다. 즉 프로그래머가 형을 결정 하지 않고 컴파일러가 데이터 형식을 확인하게 됩니다.

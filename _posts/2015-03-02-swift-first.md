@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: XCode Test Case (Swift)

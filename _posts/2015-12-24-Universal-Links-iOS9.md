@@ -79,7 +79,13 @@ func application(application: UIApplication, continueUserActivity userActivity: 
 }
 {% endhighlight %}
 
-개발하고 있는 혹은 개발된 앱에서 **유니버셜 링크** 를 사용하게 된다면 사용자에게 더 좋은 경험을 줄 수 있을 것 같습니다.
+유니버셜 링크를 적용 후에는 [링크](https://search.developer.apple.com/appsearch-validation-tool/) 에서 제대로 적용이 되었는지 확인이 가능합니다.
+
+<br>
+
+### 정리하며
+
+만약 개발하고 있는 혹은 개발된 앱에서 **유니버셜 링크** 를 사용하게 된다면 사용자에게 더 좋은 경험을 줄 수 있다고 생각합니다.
 
 <br>
 

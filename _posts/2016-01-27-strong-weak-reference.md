@@ -37,7 +37,7 @@ iOS 5부터 Apple이 `LLVM Compiler`[^1] 를 채용함에 따라 **ARC**가 iOS 
 
 ### strong & weak
 
-기본적으로 iOS에서는 객체 관리에는 reference counting 이용합니다. 모든 객체는 reference count가 1이 증가 되고 사용이 끝나면 1을 감소 시키게 되고 0이 되면 메모리에서 해제 됩니다. 여기서 stong reference는 객체를 소유 하기 때문에 reference count를 증가 시키고 weak reference는 객체를 소유하지 않기 때문에 reference count를 증가 시키기 않습니다.
+기본적으로 iOS에서는 객체 관리에는 reference counting 이용합니다. 모든 객체는 reference count가 1이 증가 되고 사용이 끝나면 1을 감소 시키게 되고 0이 되면 메모리에서 해제 됩니다. 여기서 strong reference는 객체를 소유 하기 때문에 reference count를 증가 시키고 weak reference는 객체를 소유하지 않기 때문에 reference count를 증가 시키기 않습니다.
 
 ![]({{ site.url }}/img/strong/2.jpg)  
 
@@ -47,21 +47,30 @@ iOS 5부터 Apple이 `LLVM Compiler`[^1] 를 채용함에 따라 **ARC**가 iOS 
 
 ~~~~
 class A {
-  strong var a;
+  strong var a
 }
 
-strong var obj1 = new A();
-strong var obj2 = new A();
+strong var obj1 = A()
+strong var obj2 = A()
 
-obj1.a = obj2;
-obj2.a = obj1;
+obj1.a = obj2
+obj2.a = obj1
 ~~~~
 
-위에 소스에서 **`obj1 = nil; obj2 = nil;`**의 코드를 수행한다면 obj가 서로 참조하고 있기 때문에 reference count가 1이 됩니다. 즉 메모리에서 해제 되지 않고 메모리 누수를 발생시키는 순환참조 문제가 생기게 됩니다. 그래서 **weak reference** 를 사용하여 메모리가 안전하게 해제 되도록 사용을 할 수 있습니다.
+A 클래스 **obj1**, **obj2** 의 인스턴스가 생성됩니다. 여기에 각 인스턴스의 변수에 서로 참조를 하게 하였습니다.  
+
+~~~~
+obj1 = nil
+obj2 = nil
+~~~~
+
+위의 해당 코드를 수행한다면 메모리가 해제 되는것이 아니라 obj가 서로 참조하고 있기 때문에 reference count가 1이 되면서
+메모리 누수를 발생시키는 순환참조 문제가 생기게 됩니다.   
+<br>
+만약 **weak reference** 를 사용하게 된다면 소유자를 해당 변수에서 가지고 있는게 아니어서 `obj = nil` 로 해제를 할때
+메모리가 안전하게 해제 되게 됩니다.
 <br>
 <br>
-
-
 
 [^1]:LLVM (이전 이름: Low Level Virtual Machine)은 컴파일러의 기반구조이다. 프로그램을 컴파일 타임, 링크 타임, 런타임 상황에서 프로그램의 작성 언어에 상관없이 최적화를 쉽게 구현할 수 있도록 구성되어 있다. [위키백과](https://ko.wikipedia.org/wiki/LLVM)
 [^2]:순환 참조(circular reference) [위키백과](https://ko.wikipedia.org/wiki/순환_참조)

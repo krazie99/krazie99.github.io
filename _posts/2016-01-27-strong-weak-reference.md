@@ -12,13 +12,13 @@ iOS 개발을 할때 **property** 선언시 **retain, nonatomic, assign, copy** 
 하게 되면 **getter, setter** 를 자동으로 생성해 줍니다.  
 <br>
 
-~~~~
+{% highlight swift %}
 - assign: 새로운 값의 주소값만 받음  
 - retain : 기존 객체를 release 한 후 새로운 객체를 retain
 - copy : 기존 객체를 release 한 후 새로운 객체를 copy  
 - atomic : 멀티 스레드에서 모든 스레드안에 값을 동기화  
 - nonatomic : 멀티 스레드에서 각 스레드안의 값을 동기화 하지 않음  
-~~~~
+{% endhighlight %}
 
 <br>
 
@@ -45,7 +45,7 @@ iOS 5부터 Apple이 `LLVM Compiler`[^1] 를 채용함에 따라 **ARC**가 iOS 
 
 만약 iOS에서 **strong reference**만으로 개발을 하게 되면 **순환 참조**[^2]의 문제가 될수 있습니다.
 
-~~~~
+{% highlight swift %}
 class A {
   strong var a
 }
@@ -59,14 +59,14 @@ strong var objb = B()
 
 obja.a = objb
 objb.b = obja
-~~~~
+{% endhighlight %}
 
 각각 A 클래스와 B 클래스의 인스턴스 **obja**, **objb** 생성됩니다. 여기에 각 인스턴스의 변수에 서로를 참조를 하게 하였습니다.  
 
-~~~~
+{% highlight swift %}
 obja = nil
 objb = nil
-~~~~
+{% endhighlight %}
 
 위의 해당 코드를 수행한다면 메모리가 해제 되는것이 아니라 obj가 서로를 참조하고 있기 때문에 reference count가 1이 되면서
 메모리 누수를 발생시키는 순환참조 문제가 생기게 됩니다.   

@@ -2,7 +2,7 @@
 layout: post
 title: iOS strong and weak reference
 excerpt: "strong & weak reference의 차이점"
-tags: [ios, objective-c, strong, weak, property, retain,reference]
+tags: [ios, objective-c, strong, weak, property, retain, reference]
 ---
 
 ### property
@@ -50,25 +50,28 @@ class A {
   strong var a
 }
 
-strong var obj1 = A()
-strong var obj2 = A()
+class B {
+  strong var b
+}
 
-obj1.a = obj2
-obj2.a = obj1
+strong var obja = A()
+strong var objb = B()
+
+obja.a = objb
+objb.b = obja
 ~~~~
 
-A 클래스 **obj1**, **obj2** 의 인스턴스가 생성됩니다. 여기에 각 인스턴스의 변수에 서로 참조를 하게 하였습니다.  
+각각 A 클래스와 B 클래스의 인스턴스 **obja**, **objb** 생성됩니다. 여기에 각 인스턴스의 변수에 서로를 참조를 하게 하였습니다.  
 
 ~~~~
-obj1 = nil
-obj2 = nil
+obja = nil
+objb = nil
 ~~~~
 
-위의 해당 코드를 수행한다면 메모리가 해제 되는것이 아니라 obj가 서로 참조하고 있기 때문에 reference count가 1이 되면서
+위의 해당 코드를 수행한다면 메모리가 해제 되는것이 아니라 obj가 서로를 참조하고 있기 때문에 reference count가 1이 되면서
 메모리 누수를 발생시키는 순환참조 문제가 생기게 됩니다.   
 
-만약 **weak reference** 를 사용하게 된다면 소유자를 해당 변수에서 가지고 있는게 아니어서 `obj = nil` 로 해제를 할때
-메모리가 안전하게 해제 되게 됩니다.
+만약 여기서 **weak reference** 를 사용하게 된다면 소유자를 해당 변수에서 가지고 있지 않기때문에 메모리가 안전하게 해제 됩니다.
 <br>
 <br>
 

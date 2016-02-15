@@ -70,7 +70,7 @@ SOAP : Simple Object Access Protocol
 
 간단하게 **Socket** 은 통신을 좀더 쉽게 사용할 수 있도록 한 **API 함수** 를 모아놓은 **Library** 라고 생각하면 됩니다.
 
-![]({{ site.url }}/img/http/2.png)
+![]({{ site.url }}/img/http/3.png)
 
 > Socket 요청 절차
 

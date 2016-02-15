@@ -4,7 +4,7 @@
 ####################################
 #
 title: Sunny the iOS Developer
-email: 
+email:
 description: Sunny Choi
 categories: [portfolio]
 # the base hostname & protocol for your site
@@ -12,7 +12,7 @@ categories: [portfolio]
 # Then, the 'url' is: http://yourname.github.io
 # If your project is placed in another repository as a gh-pages branch, like: https://github.com/yourname/projectname
 # Then, the 'url' is: http://yourname.github.io/projectname
-url: 
+url:
 
 #
 ###################################
@@ -20,7 +20,7 @@ url:
 ####################################
 #
 markdown:    kramdown
-highlighter:  pygments
+highlighter:  rouge
 excerpt_separator: <!--more-->
 
 kramdown:

@@ -1,18 +1,16 @@
 ---
 layout: post
-title: Mobile Networking
-excerpt: "모바일 통신에 대한 간단한 정리"
-tags: [mobile, socket, tcp/ip, http, networking]
+title: HTTP & Socket Networking
+excerpt: "HTTP & Socket 통신에 대한 간단한 정리"
+tags: [mobile, socket, tcp/ip, http, networking, socket]
 ---
 
 ## 시작하며
 
-회사 웹&앱 서비스 개발을 하다 보면 네트워크 통신 개발이 거의 대부분을 차지할정도로 많은 부분에서 사용하게 됩니다.    
-그렇다면 서비스 개발을 할 때 어떤 방식의 통신을 사용 하면 좋을 지에 대해 많은 생각을 하게 됩니다.  
+회사에서나 개인적으로 서비스 개발을 하다 보면 네트워크 통신 개발이 많은 부분에서 사용하게 됩니다.  
+그래서, 저는 언제나 서비스 개발을 하기전 어떤 방식의 통신을 사용 하면 더 효과적일 지에 대해 많은 생각을 하게 됩니다.  
 
-그리고, 간혹 모바일에서는 어떤 통신을 사용하는지 궁금해 하는 분들이 있습니다만, 통신 기술은 기본적으로 다 같다고 생각 하면 됩니다.
-
-여기서는 **통신 프로토콜** 중에서 HTTP 통신과 Socket 통신에 관련된 글을 간단하게 적어보려고 합니다.  
+이 글에서는 제가 모바일 앱 개발을 하면서 사용했던 **통신 프로토콜** 중에서 HTTP 통신과 Socket 통신에 관련된 글을 간단하게 정리해보려고 합니다.  
 <br>
 
 ### Communications protocol
@@ -80,9 +78,9 @@ SOAP : Simple Object Access Protocol
 
 ## 정리하며
 
-제목은 거창하게 **Mobile Networking** 이라고 적었지만, 이 글에서는 제가 모바일 개발시에 많이 사용하게 되는 **HTTP 프로토콜** 과 **Socket** 에 대해 간단하게 정리 하였습니다.
+제목은 거창하였지만 이 글에서는 제가 모바일 개발시에 많이 사용하게 되는 **HTTP 프로토콜** 과 **Socket** 에 대해 간단하게 정리 하였습니다.
 
-물론 HTTP 통신에 대한 모든 부분을 구현하지는 않습니다. **애플워치** 같은 특별한 경유를 제외하고는 보통 **iOS 프로그래밍** 에서 **HTTP 통신** 을 할때 [AFNetworking (Objective-c)](http://afnetworking.com) 및 [Alamofire (Swift)](https://github.com/Alamofire/Alamofire) 통신 라이브러리를 사용하고 있습니다.
+물론 HTTP 통신에 대한 모든 부분을 직접 구현하지는 않습니다. 저는 **애플워치** 같은 특별한 경유를 제외하고는 보통 **iOS 프로그래밍** 에서 **HTTP 통신** 을 할때 [AFNetworking (Objective-c)](http://afnetworking.com) 및 [Alamofire (Swift)](https://github.com/Alamofire/Alamofire) 등의 통신 라이브러리를 사용하고 있습니다.
 
 이 글을 통해 통신 프로토콜에 대해 간단하게라도 이해가 되었으면 합니다.
 

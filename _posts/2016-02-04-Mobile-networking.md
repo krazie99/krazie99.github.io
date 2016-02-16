@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mobile Networking Protocol
+title: Mobile Networking
 excerpt: "모바일 통신에 대한 간단한 정리"
 tags: [mobile, socket, tcp/ip, http, networking]
 ---

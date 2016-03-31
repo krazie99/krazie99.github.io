@@ -47,21 +47,17 @@ iOS 5부터 Apple이 `LLVM Compiler`[^1] 를 채용함에 따라 **ARC**가 iOS 
 
 {% highlight swift %}
 class A {
-  strong var a
+  strong var v
 }
 
-class B {
-  strong var b
-}
+strong var obja = new A()
+strong var objb = new A()
 
-strong var obja = A()
-strong var objb = B()
-
-obja.a = objb
-objb.b = obja
+obja.v = objb
+objb.v = obja
 {% endhighlight %}
 
-각각 A 클래스와 B 클래스의 인스턴스 **obja**, **objb** 생성됩니다. 여기에 각 인스턴스의 변수에 서로를 참조를 하게 하였습니다.  
+각각 A 클래스의 인스턴스 **obja**, **objb** 생성합니다. 여기에 각 인스턴스의 변수에 서로를 참조를 하게 하였습니다.  
 
 {% highlight swift %}
 obja = nil

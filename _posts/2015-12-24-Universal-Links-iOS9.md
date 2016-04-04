@@ -64,7 +64,7 @@ Domains 에 *"**applinks:도메인**"* 을 입력하시고 저장을 하게 되�
 위의 설정을 완료 하고 나서는 꼭 **Provisioning Profile** 을 갱신 하셔야 정상적으로 작동 합니다.
 
 <br>
-  
+
 #### AppDelegate ####
 
 마지막으로, 링크를 타고 실행 되는 **AppDelegate** 의 딜리게이트 처리를 하시면 됩니다.
@@ -78,13 +78,23 @@ func application(application: UIApplication, continueUserActivity userActivity: 
 
     if let strUrl = userActivity.webpageURL?.absoluteString {
       //딥링크 처리  
+      //웹브라우징에서 들어왔을때 처리
+      if userActivity.activityType == NSUserActivityTypeBrowsingWeb {
+
+      }
+      else {
+
+      }
     }
 
     return true
 }
 {% endhighlight %}
 
-유니버셜 링크를 적용 후에는 [링크](https://search.developer.apple.com/appsearch-validation-tool/) 에서 제대로 적용이 되었는지 확인이 가능합니다.
+유니버셜 링크를 적용 후에는 [링크](https://search.developer.apple.com/appsearch-validation-tool/) 에서 제대로 적용이 되었는지 확인이 가능합니다.  
+참고로, **유니버셜 링크** 가 모든곳에서 동작하지 않습니다.
+
+![]({{ site.url }}/img/universallink/3.png)   
 
 <br>
 

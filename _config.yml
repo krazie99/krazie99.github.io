@@ -3,9 +3,9 @@
 # Site wide configuration
 ####################################
 #
-title: Sunny the iOS Developer
+title: Sean the iOS Developer
 email:
-description: Sunny Choi
+description: Sean Choi
 categories: [portfolio]
 # the base hostname & protocol for your site
 # If your project is placed in https://github.com/yourname/yourname.github.io at master branch
@@ -36,8 +36,8 @@ kramdown:
 ####################################
 #
 owner:
-  name: Sunny Choi
-  avatar: sunny.png
+  name: Sean Choi
+  avatar: profile_s.png
   job: "iOS Developer"
   bio: "Objective-C and Swift"
   email: krazie99@gmail.com

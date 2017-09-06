@@ -12,7 +12,7 @@ categories: [portfolio]
 # Then, the 'url' is: http://yourname.github.io
 # If your project is placed in another repository as a gh-pages branch, like: https://github.com/yourname/projectname
 # Then, the 'url' is: http://yourname.github.io/projectname
-url: https://github.com/krazie99/portfolio
+url:
 
 #
 ###################################

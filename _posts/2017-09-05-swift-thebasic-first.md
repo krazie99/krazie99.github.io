@@ -1,11 +1,14 @@
 ---
 layout: post
 title: Swift - The Basics (1)
-excerpt: “Swift 3.0.1 - The Basic 첫번째“
+excerpt: Swift 3.0.1 - The Basic (1)
 tags: [ios, Swift] 
 ---
 
-# Swift : The Basics (1)
+안녕하세요. iOS 개발자 엔비냥 입니다.
+Apple 에서 제공하고 있는 (Swift 3.0.1)[https://itunes.apple.com/kr/book/the-swift-programming-language-swift-3-1/id881256329?mt=11] 문서를 번역하려고 합니다. 오역이 있으면 댓글 부탁드립니다.
+
+--
 
 Swift 는 iOS, MacOS, WatchOS & tvOS 어플리케이션 개발을 위한 새로운 프로그래밍 언어 입니다.  그럼에도 불구하고, Swift 의 많은 부분은 C 와 Objective-C 의 개발 경험에서 비롯 됩니다.
 

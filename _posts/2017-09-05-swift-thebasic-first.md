@@ -2,9 +2,7 @@
 layout: post
 title: Swift - The Basics (1)
 excerpt: “Swift 3.0.1 - The Basic 첫번째“
-tags: [ios, Swift]
-image:
-  feature: swift/1.png
+tags: [ios, Swift] 
 ---
 
 # Swift : The Basics (1)

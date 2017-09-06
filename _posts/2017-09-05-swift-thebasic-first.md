@@ -1,16 +1,18 @@
 ---
 layout: post
-title: Swift : The Basics (1)
-excerpt: “Swift 3.0.1 : The Basic 첫번째“
+title: Swift - The Basics (1)
+excerpt: “Swift 3.0.1 - The Basic 첫번째“
 tags: [ios, Swift]
 image:
   feature: swift/1.png
 ---
 
-# # Swift : The Basics (1)
+# Swift : The Basics (1)
+
 Swift 는 iOS, MacOS, WatchOS & tvOS 어플리케이션 개발을 위한 새로운 프로그래밍 언어 입니다.  그럼에도 불구하고, Swift 의 많은 부분은 C 와 Objective-C 의 개발 경험에서 비롯 됩니다.
 
 ## Constants And Variables (상수와 변수)
+
 상수는 변하지 않는 값을 가지고 있는 반면에 변수는 후에 다른 값을 가질수 있습니다.
 
 ## Declaring Constants and Variables (상수와 변수 선언)
@@ -65,7 +67,7 @@ let 🐶🐮 = "dogcow”
 
 한번 선언된 상수나 변수는 같은 이름으로 재 선언 할 수 없고, 다른 타입으로 값으로 바꿀수 없습니다.
 
-> Swift 에서 지정된 키워드와 같은 이름으로 상수나 변수를 만들때에는 backticks (`) 를 앞뒤로 붙여서 사용하면 됩니다.
+> Swift 에서 지정된 키워드와 같은 이름으로 상수나 변수를 만들때에는 backticks(`) 를 앞뒤로 붙여서 사용하면 됩니다.
 
 ## Printing Constants and Variables (상수와 변수의 프린팅)
 

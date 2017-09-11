@@ -35,6 +35,9 @@ kramdown:
 # Site Owner configuration
 ####################################
 #
+disqus:
+  id: "krazie99@gmail.com"
+
 owner:
   name: Sean Choi
   avatar: profile_s.png

@@ -2,6 +2,7 @@
 layout: post
 title: Swift - The Basics (3)
 excerpt: Swift 3.0.1 - The Basic (3)
+comments: true
 tags: [ios, Swift] 
 ---
 

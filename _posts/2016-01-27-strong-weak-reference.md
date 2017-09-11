@@ -1,7 +1,8 @@
 ---
 layout: post
 title: iOS strong and weak reference
-excerpt: "strong & weak reference의 차이점"
+excerpt: strong & weak reference의 차이점
+comments: true
 tags: [ios, objective-c, strong, weak, property, retain, reference]
 ---
 

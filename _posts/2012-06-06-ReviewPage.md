@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 앱스토어 리뷰 페이지 이동
-excerpt: "앱스토어 리뷰 페이지 이동 URL"
+excerpt: 앱스토어 리뷰 페이지 이동 URL
+comments: true
 tags: [ios, objective-c, 앱스토어, 리뷰]
 ---
 ## 앱스토어 리뷰 URL

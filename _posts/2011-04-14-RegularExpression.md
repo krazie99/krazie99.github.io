@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 정규식 @ Objective-c
-excerpt: "Objective-c에서 정규식 사용하기"
+excerpt: Objective-c에서 정규식 사용하기
+comments: true
 tags: [ios, objective-c, 정규식, regularexpression]
 ---
 ## objective-c에서 정규식을 이용한 검색 예제

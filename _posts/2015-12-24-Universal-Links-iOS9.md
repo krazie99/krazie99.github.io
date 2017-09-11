@@ -1,7 +1,8 @@
 ---
 layout: post
 title: iOS9 Universal Links
-excerpt: "웹 주소 링크로 바로 앱을 열수 있게 해주는 Universal Links (iOS9)"
+excerpt: 웹 주소 링크로 바로 앱을 열수 있게 해주는 Universal Links (iOS9)
+comments: true
 tags: [ios, objective-c, Universal Link, ios9, 유니버셜링크, swift]
 ---
 

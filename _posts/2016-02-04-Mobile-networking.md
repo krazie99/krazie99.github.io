@@ -1,7 +1,8 @@
 ---
 layout: post
 title: HTTP & Socket Networking
-excerpt: "HTTP & Socket 통신에 대한 간단한 정리"
+excerpt: HTTP & Socket 통신에 대한 간단한 정리
+comments: true
 tags: [mobile, socket, tcp/ip, http, networking, socket]
 ---
 

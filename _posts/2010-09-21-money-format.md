@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Money Format
-excerpt: "Objective-C에서 Money format 사용하기"
+excerpt: Objective-C에서 Money format 사용하기
+comments: true
 tags: [ios, objective-c]
 ---
 

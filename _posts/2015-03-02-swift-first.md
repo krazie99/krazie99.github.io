@@ -1,7 +1,8 @@
 ---
 layout: post
 title: objective-c 개발자의 Swift 맛보기
-excerpt: "Swift 기본 문법"
+excerpt: Swift 기본 문법
+comments: true
 tags: [ios, objective-c, swift]
 image:
   feature: swift_first/1.png

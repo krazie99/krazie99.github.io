@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Twitter Flock Seoul 2015
-excerpt: "Crashlytics, Digits & Mopub"
+excerpt: Crashlytics, Digits & Mopub
+comments: true
 tags: [app, twitter, fabric, digits, mopub, crashlytics]
 ---
 

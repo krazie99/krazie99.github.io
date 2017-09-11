@@ -1,7 +1,8 @@
 ---
 layout: post
 title: iOS Push Certification (pem)
-excerpt: "iOS 푸쉬 인증서 만들기"
+excerpt: iOS 푸쉬 인증서 만들기
+comments: true
 tags: [ios, objective-c, push, push-notification, notification, apns]
 image:
   feature: push/apns.png

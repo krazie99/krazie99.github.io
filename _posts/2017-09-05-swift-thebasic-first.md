@@ -79,7 +79,7 @@ let 🐶🐮 = "dogcow”
 print(friendlyWelcome)
 {% endhighlight %}
 
-print(_:separator:terminator) 함수는 값을 출력할 수 있는 프린트 하는 글로벌 함수 입니다.  예를들어 XCode 에서 print(_:separator:terminator) 함수를 사용하면 XCode 콘솔창에 해당 값을 프린트 하게 됩니다.
+print(_:separator:terminator) 함수는 값을 출력할 수 있는 프린트 하는 글로벌 함수 입니다.  예를들어 Xcode 에서 print(_:separator:terminator) 함수를 사용하면 Xcode 콘솔창에 해당 값을 프린트 하게 됩니다.
 
 print 함수를 호출 할때 separator 와 terminator 파라미터는 기본값을가지고 있어서 생략할 수 있습니다.
 

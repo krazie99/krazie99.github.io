@@ -139,7 +139,7 @@ assert(age >= 0, "A person's age cannot be less than zero")
 // this causes the assertion to trigger, because age is not >= 0
 {% endhighlight %}
 
-> XCode 에서 assertion 들은 릴리즈 컴파일이 될때 사용이 불가능 하게 됩니다.
+> Xcode 에서 assertion 들은 릴리즈 컴파일이 될때 사용이 불가능 하게 됩니다.
 
 ——
 

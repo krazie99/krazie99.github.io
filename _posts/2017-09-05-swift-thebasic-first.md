@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Swift - The Basics (1)
-excerpt: Swift 3.0.1 - The Basic (1)
+excerpt: Swift 3 - The Basic (1)
 comments: true
 tags: [ios, Swift] 
 ---
 
 안녕하세요. iOS 개발자 엔비냥 입니다.
-Apple 에서 제공하고 있는 [Swift 3.0.1](https://itunes.apple.com/kr/book/the-swift-programming-language-swift-3-1/id881256329?mt=11) 문서를 번역하려고 합니다. 오역이 있으면 댓글 부탁드립니다.
+Apple 에서 제공하고 있는 [Swift 3](https://itunes.apple.com/kr/book/the-swift-programming-language-swift-3-1/id881256329?mt=11) 문서를 번역하려고 합니다. 오역이 있으면 댓글 부탁드립니다.
 
 --
 

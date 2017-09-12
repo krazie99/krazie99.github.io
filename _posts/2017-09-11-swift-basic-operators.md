@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Swift - Basic Operators
-excerpt: Swift 3.0.1 - 기본 연산자들
+excerpt: Swift 3 - 기본 연산자들
 comments: true
 tags: [ios, Swift, operator, 연산자] 
 ---

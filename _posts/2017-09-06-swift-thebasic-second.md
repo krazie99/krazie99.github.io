@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Swift - The Basics (2)
-excerpt: Swift 3 - The Basic (2)
+excerpt: Swift - The Basic (2)
 comments: true
-tags: [ios, Swift] 
+tags: [ios, Swift]
 ---
 
 안녕하세요. iOS개발자 엔비냥 입니다.
@@ -77,7 +77,7 @@ SomType(ofInitialValue) 는 Swift 에서 기본적인 초기화 방법 입니다
 
 ### Integer And Floating-Point Conversion
 
-정수와 소숫점 사이에 변환 명시적 이어야 합니다. 
+정수와 소숫점 사이에 변환 명시적 이어야 합니다.
 
 {% highlight swift %}
 let three = 3

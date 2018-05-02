@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Swift - String and Characters
-excerpt: Swift 3 - 문자열과 캐릭터
+excerpt: Swift - 문자열과 캐릭터
 comments: true
-tags: [ios, Swift, String, Character] 
+tags: [ios, Swift, String, Character]
 ---
 
 안녕하세요. 엔비냥 입니다.
@@ -16,7 +16,7 @@ String 은 “hello, world” 나 “albatross” 같은 연속된 문자들(cha
 
 Swift의 String 및 Character types은 코드에서 텍스트를 사용하여 작업 할 수있는 빠른 유니 코드 호환 방식을 제공합니다.  String 의 생성 및 취급에 대한 신텍스는 C와 비슷하게 가볍고 읽기 쉽습니다. String 의 연결은 2개의 string 을 + 연산자로 쉽게 연결 할 수 있습니다.
 
-> Swift 의 String 타입은 Foundation 의 NSString 클래스에 브릿징 되어 있습니다. Foundation은 String을 확장하여 NSString에 정의 된 메서드를 노출합니다. 즉, Foundation을 임포트하면 캐스팅하지 않고 String의 NSString 메서드에 액세스 할 수 있습니다. 
+> Swift 의 String 타입은 Foundation 의 NSString 클래스에 브릿징 되어 있습니다. Foundation은 String을 확장하여 NSString에 정의 된 메서드를 노출합니다. 즉, Foundation을 임포트하면 캐스팅하지 않고 String의 NSString 메서드에 액세스 할 수 있습니다.
 
 ## String Literals
 
@@ -149,7 +149,7 @@ Unicode scalar 는 U+0061 (소문자 a) 혹은 U+1F425 ( 앞을 보고 있는 �
 
 String literal 다음의 특별한 문자들도 포함할 수 있습니다.
 
-* The escaped special characters 
+* The escaped special characters
 * \0 (null character)
 * \\ (backslash)
 * \t (horizontal tab)
@@ -251,7 +251,7 @@ welcome.insert(contentsOf: " there".characters, at: welcome.index(before: welcom
 
 ## Comparing Strings
 
-Swift 는 텍스트의 값을 비교하는 3가지 방법 ( String 과 문자의 같음, prefix 의 같음, suffix 의 같음) 을 제공합니다. 
+Swift 는 텍스트의 값을 비교하는 3가지 방법 ( String 과 문자의 같음, prefix 의 같음, suffix 의 같음) 을 제공합니다.
 
 ### String and Character Equality
 
@@ -296,7 +296,7 @@ print("")
 // "68 111 103 226 128 188 240 159 144 182" 이 프린트 됩니다.
 {% endhighlight %}
 
-이 예제에서 처음 3개 codeUnit 인 (68, 111, 103) 은 ASCII 표현과 같은 UTF-8 표현인 (D, o, g) 의 케릭터를 나타냅니다. 
+이 예제에서 처음 3개 codeUnit 인 (68, 111, 103) 은 ASCII 표현과 같은 UTF-8 표현인 (D, o, g) 의 케릭터를 나타냅니다.
 
 ### UTF-16 표현
 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Swift - Basic Operators
-excerpt: Swift 3 - 기본 연산자들
+excerpt: Swift - 기본 연산자들
 comments: true
-tags: [ios, Swift, operator, 연산자] 
+tags: [ios, Swift, operator, 연산자]
 ---
 
 안녕하세요. iOS 개발자 엔비냥 입니다.
@@ -21,12 +21,12 @@ Swift 는 C에 없는 2개 숫자의 범위 연산자를 제공 하고 있습니
 
 이 챕터에서는 Swift 의 기본적인 연산자들을 설명합니다. Advance Operators 에서 좀더 스위프트의 고급 연산자에 대해 설명 할 것 입니다.
 
-## Terminology 
+## Terminology
 
 연산자들은 단일, 바이너리 (이항) 혹은 터너리 (삼항) 이 있습니다.
 
 * 단일 연산자 (-a 같은) 는 하나의 타겟에 작용 합니다.  !b와 같이 단일 prefix 연산자는 타겟의 바로 앞에 적어줍니다.  그리고, c! 와 같은 단일 postfix 연산자는 타겟의 바로 뒤에 적어줍습니다.
-* 바이너리 (이항) 연산자들 (2 +3 같은) 은 2개의 타겟들에게 작용 됩니다. 이것들은 2개의 타겟의 사이에 있기때문에 infix 라고 합니다. 
+* 바이너리 (이항) 연산자들 (2 +3 같은) 은 2개의 타겟들에게 작용 됩니다. 이것들은 2개의 타겟의 사이에 있기때문에 infix 라고 합니다.
 * 터너리 (삼항) 연산자들은 3개의 타겟 사이에 작용 합니다. Swift 에서는 단 하나의 터너리 연산자가 있습니다. (a ? b : c)
 
 ## Assignment Operator
@@ -51,7 +51,7 @@ C 와 Objective-C 와 다르게 Swift 의 대입 연산자 에서는  그 자체
 
 {% highlight swift %}
 if x = y {
-// x = y 는 값을 반환 하지 않기 때문에 유효하지 않습니다. 
+// x = y 는 값을 반환 하지 않기 때문에 유효하지 않습니다.
 }
 {% endhighlight %}
 
@@ -71,7 +71,7 @@ Swift 는 기본적인 4가지 산술 연산자를 지원합니다.
 10.0 / 2.5	// = 4.0
 {% endhighlight %}
 
-C 와 Objective-C 와는 다르게, Swift 의 산술 연산자들은 기본적으로 값에 대한 오버플로우를 지원하지 않습니다. 값의 오버플로우를 사용하려면 overflow 연산자들 ( a &+ b 와 같은) 사용해야 합니다. 
+C 와 Objective-C 와는 다르게, Swift 의 산술 연산자들은 기본적으로 값에 대한 오버플로우를 지원하지 않습니다. 값의 오버플로우를 사용하려면 overflow 연산자들 ( a &+ b 와 같은) 사용해야 합니다.
 
 덧셈 연산자는 String 연결에도 지원 합니다.
 
@@ -94,7 +94,7 @@ C 와 Objective-C 와는 다르게, Swift 의 산술 연산자들은 기본적�
 
 두번째 라인의 음수에서는 -9 = (4 * -2) + -1 과 같고 나머지인 -1 을 반환 합니다.
 
-## Unary Minus Operator 
+## Unary Minus Operator
 
 숫자의 앞에 - 의 사이 붙을수 있는데, 이것을 단일 마이너스 연산자라고 합니다.
 
@@ -104,9 +104,9 @@ let minusThree = -three 		// minusThree 는 -3 입니다.
 let plusThree = -minusThree	// plusThree 는 3 혹은 "마이너스 마이너스 three" 입니다.
 {% endhighlight %}
 
-단일 마이너스 연산자 (-) 는 빈칸 없이 값의 바로 앞에 붙여 집니다. 
+단일 마이너스 연산자 (-) 는 빈칸 없이 값의 바로 앞에 붙여 집니다.
 
-## Unary Plus Operator 
+## Unary Plus Operator
 
 단일 플러스 연산자 (+) 는 변화없이 값 자체를 반환 해줍니다.
 
@@ -117,7 +117,7 @@ let alsoMinusSix = +minusSix // alsoMinusSix 는 -6 입니다.
 
 ## Compound Assignment Operators
 
-C에서와 같이, Swift 에서는 다른 연산자와 대입 연산자 (=)를 합쳐서 사용하는 복합 대입 연산자를 제공합니다. 
+C에서와 같이, Swift 에서는 다른 연산자와 대입 연산자 (=)를 합쳐서 사용하는 복합 대입 연산자를 제공합니다.
 
 {% highlight swift %}
 var a = 1
@@ -129,7 +129,7 @@ a += 2 라는 표현은 a = a + 2 의 간단하게 적은 방법 입니다.  덧
 
 > 복합 대입 연산자는 값을 반환하지 않습니다. 즉, let b = a += 2 라고 사용할 수 없습니다.
 
-## Comparison Operators 
+## Comparison Operators
 
 Swift 에서는 모든 C 의 기본 비교 연산자들을 제공합니다.
 
@@ -140,7 +140,7 @@ Swift 에서는 모든 C 의 기본 비교 연산자들을 제공합니다.
 * .. 보다 같거나 크다 ( a >= b )
 * .. 보다 같거나 작다 ( a <= b )
 
-> Swift 에서는 2개의 Identity (동일) 연산자 (=== & !==) 를 제공합니다. 이 연산자는 두 개의 객체 참조가 모두 동일한 객체 인스턴스를 참조하는지 여부를 테스트하는 데 사용됩니다. 
+> Swift 에서는 2개의 Identity (동일) 연산자 (=== & !==) 를 제공합니다. 이 연산자는 두 개의 객체 참조가 모두 동일한 객체 인스턴스를 참조하는지 여부를 테스트하는 데 사용됩니다.
 
 각 비교 연산자들은 성공인지 실패인지 Bool 값을 반환 합니다.
 
@@ -198,7 +198,7 @@ a != nil ? a! : b
 
 ## Range Operators
 
-Swift 는 2가지의 범위 연산자를 가지고 있습니다. 
+Swift 는 2가지의 범위 연산자를 가지고 있습니다.
 
 ### Closed Range Operator
 
@@ -289,4 +289,3 @@ print("ACCESS DENIED")
 }
 // Prints "Welcome!"
 {% endhighlight %}
-

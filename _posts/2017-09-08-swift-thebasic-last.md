@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Swift - The Basics (3)
-excerpt: Swift 3 - The Basic (3)
+excerpt: Swift - The Basic (3)
 comments: true
-tags: [ios, Swift] 
+tags: [ios, Swift]
 ---
 
 안녕하세요. iOS 개발자 엔비냥 입니다.
 이제 마지막으로 The Basic 챕터를 번역하였습니다. 오역이나 오타가 있으면 댓글로 부탁드립니다.
 
-—- 
+—-
 
 ## Optionals
 
@@ -18,7 +18,7 @@ tags: [ios, Swift]
 {% highlight swift %}
 let possibleNumber = "123"
 let convertedNumber = Int(possibleNumber)
-// convertedNumber 는 Int? 혹은 옵셔널 Int 타입으로 추론 됩니다. 
+// convertedNumber 는 Int? 혹은 옵셔널 Int 타입으로 추론 됩니다.
 {% endhighlight %}
 
 이 예제에서 초기화 시 String 을 Int 로 변환 하려고 합니다. 여기서는 Int 로 반환되기 보다 초기화가 실패를 할 수가 있기 때문에 optional Int 로 반환 됩니다. Optional Int 는 Int? 라고 적습니다. 물음표는 값이 옵셔널을 가지고 있다, 즉 Int 값이 있거나 없을수도 있다는것을 의미 합니다. (다른 타입의 값 즉 Bool, String 같은 값들이 있을수는 없습니다.)
@@ -54,7 +54,7 @@ print("convertedNumber contains some integer value.")
 // convertedNumber 가 어떠한 Integer 값을 가지고 있다.
 {% endhighlight %}
 
-만약 optional 이 값이 있다고 확신할때, optional 이름 뒤에 느낌표 (!) 를 붙여서 내재하고 있는 값에 접근할 수 있습니다. 
+만약 optional 이 값이 있다고 확신할때, optional 이름 뒤에 느낌표 (!) 를 붙여서 내재하고 있는 값에 접근할 수 있습니다.
 
 {% highlight swift %}
 if convertedNumber != nil {

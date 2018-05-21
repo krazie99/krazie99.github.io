@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Swift - Collection Types (1)
-excerpt: Array
+excerpt: Swift- Array
 comments: true
 tags: [ios, Swift, Collection Type, Array]
 ---

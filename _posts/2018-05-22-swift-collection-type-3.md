@@ -14,7 +14,7 @@ tags: [ios, Swift, Collection Type, Dictionary]
 
 # Dictionaries
 
-Dictionary 는 순서 없이 컬렉션 안에 같은 타입의 키들과 같은 타입의 값들 사이의 연결된 값들을 저장합니다.
+Dictionary 는 컬렉션 안에 같은 타입의 키들과 같은 타입의 값들 사이의 연결된 값들을 순서 없이 저장합니다.
 
 각 값들은 Dictionary 안에 값을 식별하도록 하는 유니크한 키와 연결 되어있습니다.
 

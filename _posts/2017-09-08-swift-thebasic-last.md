@@ -146,3 +146,6 @@ assert(age >= 0, "A person's age cannot be less than zero")
 지금까지 Swift 3 에서 The Basic 챕터를 번역 하였습니다.
 모든 글을 다 번역한 것이 아니고, 최대한 간략하게 정리 하였습니다.
 각 섹션들은 다음 챕터들에서 더 자세히 설명이 될것이고, 번역 하도록 하겠습니다. 감사합니다.
+
+
+[출처]: Apple Inc. ‘The Swift Programming Language (Swift 4.1).’ iBooks. https://itunes.apple.com/kr/book/the-swift-programming-language-swift-4-1/id881256329?mt=11

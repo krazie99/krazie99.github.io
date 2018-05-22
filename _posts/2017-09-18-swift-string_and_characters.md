@@ -309,3 +309,6 @@ utf16 프로퍼티를 이용하여 String 의 UTF-16 표현에 접근할 수 있
 unicodeScalars 프로퍼티를 이용하여 String 의 Unicode Scalar 표현에 접근할 수 있습니다. 이 프로퍼티는 UnicodeScalar 값들의 모음인 UnicodeScalarView 타입입니다.
 
 ![]({{ site.url }}/img/swift/string_3.png)
+
+
+[출처]: Apple Inc. ‘The Swift Programming Language (Swift 4.1).’ iBooks. https://itunes.apple.com/kr/book/the-swift-programming-language-swift-4-1/id881256329?mt=11

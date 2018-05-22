@@ -176,4 +176,4 @@ let anotherPi = 3 + 0.14159
 
 —
 
-The Basics 가 내용이 길어서 나누어서 번역하겠습니다 ;)
+[출처]: Apple Inc. ‘The Swift Programming Language (Swift 4.1).’ iBooks. https://itunes.apple.com/kr/book/the-swift-programming-language-swift-4-1/id881256329?mt=11

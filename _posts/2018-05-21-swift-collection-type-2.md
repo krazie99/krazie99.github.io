@@ -18,18 +18,17 @@ Set 은 컬렉션에서 순서 없이 같은 타입의 확실한 값들을 저�
 
 >  Swift의 Set 타입은 Foundation 의 NSSet 클래스에 연결되어 있습니다.
 
-
 ###  Hash Values for Set Types
 
  Set 에 저장되는 타입은 그 자체로 해쉬 값으로 계산할 수 있게 제공 되는 타입, 즉 Hashable 이어야 합니다. 해시 값은 `a == b` 이면 `a.hashValue == b.hashValue` 와 같이 동일하게 비교되는 모든 객체에 대해 동일한 Int 값입니다.
 
-모든 Swift 기본 타입들 (String, Int, Double, 그리고, Bool) 은 기본적으로 hashable 이고, value 타입과 Key 타입들로 사용할 수 있습니다. 연관값 (associated values) 이 없는 조합 열거형 (Enumeration) case의 값들도 기본적으로 hashable 입니다.
+모든 Swift 기본 타입들 (String, Int, Double, 그리고, Bool) 은 기본적으로 hashable 이고, value 타입과 Key 타입들로 사용할 수 있습니다.
 
+연관값 (associated values) 이 없는 조합 열거형 (Enumeration) case의 값들도 기본적으로 hashable 입니다.
 
 ### Set Type Syntax
 
-Swift의 Set 은 예를들어, Element 라는 타입을 Set 에 저장할 수 있게 허용한다면,   `Set<Element>` 으로 적을 수 있습니다. Set 은 배열과 다르게 shorthand form 이 없습니다.
-
+Swift의 Set 은 예를들어, Element 라는 타입을 Set 에 저장할 수 있게 허용한다면,   `Set<Element>` 으로 적을 수 있습니다. Set 은 배열과 다르게 축약형 (shorthand form)[^1] 이 없습니다.
 
 ### Creating and Initializing an Empty Set
 
@@ -49,7 +48,6 @@ lettters.insert("a")
 letters = []
 // letters 는 이제 빈 set 이지만, 계속 Set<Character> 타입 입니다.
 {% endhighlight %}
-
 
 ### Creating a Set with an Array Literal
 
@@ -73,7 +71,6 @@ var favoriteGenres: Set = ["Rock", "Classical", "Hiphop"]
 {% endhighlight %}
 
 배열 리터럴 안에 모든 값들은 다 같은 타입이어서, Swift 는 favoriteGenres 변수에 대해 Set<String> 타입으로 추론할 수 있습니다.
-
 
 ### Accessing and Modifying a Set
 
@@ -125,7 +122,6 @@ if favoriteGenres.contains("Funk") {
 // "It's too funky in here." 가 출렵 됩니다.
 {% endhighlight %}
 
-
 ### Iterating Over a Set
 
 *for-in* 루프를 이용하여 Set 의 값들을 반복할 수 있습니다.
@@ -152,19 +148,15 @@ for genre in favoriteGenres.sorted() {
 // Jazz
 {% endhighlight %}
 
-
 ## Performing Set Operations
 
 두 Set 을 함께 결합하거나, 두 Set 가 공통으로 갖고있는 값을 판별하거나, 두 Set 에 동일한 값이 모두 혹은 일부가 들어 있는지 여부를 판별하는 것과 같은 기본 Set 에 대한 조작을 효율적으로 수행 할 수 있습니다.
-
 
 ## Fundamental Set Operations
 
 아래 그림은  두 Set *a와 b* 에 대해 음영 처리 된 영역으로 표시된 다양한 Set 연산의 결과들을 보여줍니다.
 
-
 ![]({{ site.url }}/img/swift/collection_2.png)
-
 
 * *intersection(_:)* 메소드를 이용하여 두 Set 모두 포함된 값들로만 이루어진 새로운 Set 을 만들어 줍니다. (교집합)
 * *symmetricDifference(_:)* 메소드를 이용하여 두 Set 에 한쪽에만 있는 값들로만 이루어진 새로운 Set 을 만들어 줍니다. (대칭 차집합)
@@ -186,21 +178,17 @@ oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted()
 // [1, 2, 9]
 {% endhighlight %}
 
-
 ## Set Membership and Equality
 
 아래 그림은 Set 간에 공유되는 요소를 나타내는 겹치는 영역이있는 세 세트 *a, b 및 c* 를 나타냅니다. a는 집합 b의 수퍼 집합입니다. 왜냐하면 a에 b의 모든 요소가 포함되어 있기 때문입니다. 반대로, 집합 b는 집합 a의 부분 집합입니다. 왜냐하면 b의 모든 요소도 a에 포함되기 때문입니다. 집합 b와 집합 c는 공통적 인 요소를 공유하지 않기 때문에 서로 분리되어 있습니다.
 
-
 ![]({{ site.url }}/img/swift/collection_3.png)
-
 
 * is Equal 연산자 (==) 를 사용하여 두 Set 가 모두 같은 값을 가지고 있는지 측정할 수 있습니다.
 * *isSubset(of:)* 메소드로 Set 의 모든 값들이 해당 Set 에 포함되어 있는지 측정할 수 있습니다.
 * *isSuperset(of:)* 메소드로 Set 에 해당 Set 의 값들이 모두 포함되어 있는지 측정할 수 있습니다.
 * *isStrictSubset(of:)* 혹은 *isStrictSuperset(of:)* 메소드로 Set 이 해당 Set 과 같지 않고, 부분집합 혹은 슈퍼세트 인지 측정할 수 있습니다.
 * *isDisjoint(with:)* 메소드로 두 Set 가 공통의 값이 없는지 측정할 수 있습니다.
-
 
 {% highlight swift %}
 let houseAnimals: Set = ["🐶", "🐱"]
@@ -214,3 +202,8 @@ farmAnimals.isSuperset(of: houseAnimals)
 farmAnimals.isDisjoint(with: cityAnimals)
 // true
 {% endhighlight %}
+
+
+[출처]: Apple Inc. ‘The Swift Programming Language (Swift 4.1).’ iBooks. https://itunes.apple.com/kr/book/the-swift-programming-language-swift-4-1/id881256329?mt=11
+
+[^1]: Array<String> 의 축약형은 [String] 입니다.

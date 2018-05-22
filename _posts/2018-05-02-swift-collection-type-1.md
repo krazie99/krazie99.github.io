@@ -194,3 +194,6 @@ for (index, value) in shoppingList.enumerated() {
 {% endhighlight %}
 
 더 자세한 for-in 루프에 대해서는 다음 챕터인 Control Flow의 For-In Loops 에서 다루도록 하겠습니다.
+
+
+[출처]: Apple Inc. ‘The Swift Programming Language (Swift 4.1).’ iBooks. https://itunes.apple.com/kr/book/the-swift-programming-language-swift-4-1/id881256329?mt=11

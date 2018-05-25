@@ -150,13 +150,13 @@ Unicode scalar 는 U+0061 (소문자 a) 혹은 U+1F425 ( 앞을 보고 있는 �
 String literal 다음의 특별한 문자들도 포함할 수 있습니다.
 
 * The escaped special characters
-* \0 (null character)
-* \\ (backslash)
-* \t (horizontal tab)
-* \n (line feed)
-* \r (carriage return)
-* \" (double quote)
-* \' (single quote)
+* \\0 (null character)
+* \\\ (backslash)
+* \\t (horizontal tab)
+* \\n (line feed)
+* \\r (carriage return)
+* \\" (double quote)
+* \\' (single quote)
 * An arbitrary Unicode scalar, written as \u{n}, where n is a 1–8 digit hexadecimal number with a value equal to a valid Unicode code point
 
 {% highlight swift %}
@@ -207,7 +207,7 @@ print("unusualMenagerie has \(unusualMenagerie.characters.count) characters")
 
 ## Accessing and Modifying a String
 
-메서드와 속성 혹은 subscript syntax 응 사용하여 String에 접근하고 수정합니다.
+메서드와 속성 혹은 subscript syntax 를 사용하여 String에 접근하고 수정합니다.
 
 ### String indices
 

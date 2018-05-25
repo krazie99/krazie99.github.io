@@ -239,7 +239,7 @@ print("Person \(i + 1) is called \(names[i])")
 
 * Logical NOT (!a)
 * Logical AND (a && b)
-* Logical OR (a || b)
+* Logical OR (a \|\| b)
 
 ### Logical Not Operator
 
@@ -251,7 +251,7 @@ Logical AND 연산자 ( a && b ) 는 양쪽 값들이 모두 true 이면 true �
 
 ### Logical OR Operator
 
-Logical OR 연산자 ( a || b ) 는 2개의 파이프 케릭터들로 이루어 집니다.  둘중 한쪽만 true 이면 이 표현식에서는 true 로 나타냅니다.
+Logical OR 연산자 ( a \|\| b ) 는 2개의 파이프 케릭터들로 이루어 집니다.  둘중 한쪽만 true 이면 이 표현식에서는 true 로 나타냅니다.
 
 {% highlight swift %}
 let hasDoorKey = false

@@ -34,8 +34,8 @@ Swift 배열 타입은 **Array<Element>**  로 쓰여집니다. 이것은 Elemen
 
 {% highlight swift %}
 var someInts = [Int]()
-print(“someInts는 [Int]타입이고, \(someInts)개의 아이템이 있다”)
-//someInts 변수는 이니셜라이져를 보면 [Int] 라고 추론할 수 있다.
+print(“someInts는 [Int]타입이고, \(someInts.count)개의 아이템이 있다”)
+//someInts 변수는 이니셜라이져를 보면 [Int] 라고 추론할 수 있습니다.
 {% endhighlight %}
 
 만약 상황이 함수 인자 혹은 타입이 지정된 상수/변수 같이 이미 타입의 정보를 제공하고 있다면, 빈 배열 리터럴 `[]` 으로 빈 배열을  생성할 수 있습니다.

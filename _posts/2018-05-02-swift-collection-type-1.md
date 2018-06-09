@@ -27,7 +27,7 @@ Swift 는 Arrays, Sets, 그리고, Dictionaries 라는 3가지 Collection 타입
 `Swift의 Array 타입은 Foundation의 NSArray 클래스에 연결되어 있습니다.`
 
 ### Array Type Shorthand Syntax
-Swift 배열 타입은 **Array<Element>**  로 쓰여집니다. 이것은 Element라는 배열 값들의 타입으로 저장이 가능하게 하는것을 나타냅니다. 또한 배열타입을 축약형, 즉 **[Element]** 라고 쓸수도 있습니다. 두개의 양식은 기능상 동일하더라도, 배열 타입을 언급할때 축약형을 사용하는것이 바람직합니다.
+Swift 배열 타입은 *Array<Element>* 로 쓰여집니다. 이것은 Element라는 배열 값들의 타입으로 저장이 가능하게 하는것을 나타냅니다. 또한 배열타입을 축약형, 즉 *[Element]* 라고 쓸수도 있습니다. 두개의 양식은 기능상 동일하더라도, 배열 타입을 언급할때 축약형을 사용하는것이 바람직합니다.
 
 ### Creating an Empty Array
 정해진 타입의 빈 배열을 생성할때는 이니셜라이져 문법을 사용합니다 :
@@ -103,7 +103,7 @@ if shoppingList.isEmpty {
 }
 {% endhighlight %}
 
-배열의 append(_:) 메소드를 이용하여 배열의 마지막에 새로운 아이템을 추가 할 수 있습니다.
+배열의 append(_ :) 메소드를 이용하여 배열의 마지막에 새로운 아이템을 추가 할 수 있습니다.
 
 `shoppingList.append(“Flour”)`
 

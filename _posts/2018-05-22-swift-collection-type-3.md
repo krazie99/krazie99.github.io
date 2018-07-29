@@ -63,9 +63,9 @@ Dictionary 를 배열 리터럴과 비슷한 Syntax를 가진 Dictionary 리터�
 var airports: [String: String] = ["YYZ": "Toronto Pearson", "DUB": "Dublin"]
 {% endhighlight %}
 
-이 *airports* Dictionary 는 *[String:String]* 타입으로 선언 되어 있습니다. 이것은  */“ Dictionary 의 키;들은 String 타입이고 값들의 타입도 String 입니다.”/* 를 의미 합니다.
+이 *airports* Dictionary 는 *[String:String]* 타입으로 선언 되어 있습니다. 이것은  */“ Dictionary 의 키들은 String 타입이고 값들의 타입도 String 입니다.”/* 를 의미 합니다.
 
-이 *airports* Dictionary 는 2개의 Key-Value 페어를 포함한 Dictionary 리터럴로 초기화 되었습니다.  첫 페어의 키는 “XYZ” 이고 값은 “Toronto Pearson” 입니다. 두번째 페어는 “DUB” 라는 키를 가지고 있고, “Dublin” 이라는 값을 가지고 있습니다.
+이 *airports* Dictionary 는 2개의 Key-Value 페어를 포함한 Dictionary 리터럴로 초기화 되었습니다.  첫 페어의 키는 “YYZ” 이고 값은 “Toronto Pearson” 입니다. 두번째 페어는 “DUB” 라는 키를 가지고 있고, “Dublin” 이라는 값을 가지고 있습니다.
 
 이 딕셔너리 리터럴은 2개의 *String:String* 페어를 가지고 있습니다.
 

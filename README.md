@@ -1,1 +1,1 @@
-http://letsean.app
+http://letsean.dev

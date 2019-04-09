@@ -12,8 +12,8 @@ categories: [portfolio]
 # Then, the 'url' is: http://yourname.github.io
 # If your project is placed in another repository as a gh-pages branch, like: https://github.com/yourname/projectname
 # Then, the 'url' is: http://yourname.github.io/projectname
-url: https://letsean.app  # https protocol 포함
-enforce_ssl: letsean.app   # protocol 없이
+url: https://letsean.dev  # https protocol 포함
+enforce_ssl: letsean.dev   # protocol 없이
 #
 ###################################
 # Jekyll configuration

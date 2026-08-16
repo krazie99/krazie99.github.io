@@ -66,4 +66,4 @@ Any change is posted on this page. Material changes are announced 30 days before
 Data protection officer
 
 - Developer: Choi Sunho
-- Email: krazie99@gmail.com
+- Email: support@letsean.dev

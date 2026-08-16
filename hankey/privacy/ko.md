@@ -70,7 +70,7 @@ Pro 구매와 후원(팁)은 Apple 의 App Store 를 통해 처리됩니다. 카
 개인정보 보호 책임자
 
 - 개발자: 최선호
-- 메일: krazie99@gmail.com
+- 메일: support@letsean.dev
 
 개인정보 침해에 대한 신고·상담이 필요하시면 아래 기관에 문의하실 수 있습니다.
 

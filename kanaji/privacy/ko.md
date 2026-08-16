@@ -66,4 +66,4 @@ Pro 구매와 후원(팁)은 Apple 의 App Store 를 통해 처리됩니다. 카
 개인정보 처리에 관한 문의
 
 - 개발자: Choi Sunho
-- 메일: krazie99@gmail.com
+- 메일: support@letsean.dev

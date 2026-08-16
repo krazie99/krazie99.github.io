@@ -68,4 +68,4 @@ Pro 版の購入および応援（チップ）は、Apple の App Store を通�
 個人情報の取扱いに関するお問い合わせ先
 
 - 開発者: Choi Sunho
-- メール: krazie99@gmail.com
+- メール: support@letsean.dev

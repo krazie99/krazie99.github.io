@@ -93,7 +93,7 @@
     <section id="links" aria-labelledby="links-label">
       <p class="section-label" id="links-label">{{ c.links_label }}</p>
       <ul class="links">
-        <li><a href="{{ p.privacy_url }}">{{ c.labels.privacy }}</a></li>
+        <li><a href="/{{ page.product }}/privacy/{{ page.lang }}/">{{ c.labels.privacy }}</a></li>
         <li><a href="https://apps.apple.com/app/id{{ p.app_store_id }}">{{ c.labels.app_store }}</a></li>
         {% if p.cafe_url %}
         <li><a href="{{ p.cafe_url }}">{{ c.labels.cafe }}</a></li>

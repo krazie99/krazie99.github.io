@@ -4,7 +4,6 @@ kanaji:
   mark: /assets/img/kanaji-mark.png
   glyph: か
   app_store_id: "6801812576"
-  privacy_url: https://gist.github.com/krazie99/55684735a4aab1dc8dcd54da703740d5
   languages: [ja, ko]
 
 hankey:
@@ -12,7 +11,6 @@ hankey:
   mark: /assets/img/hankey-mark.png
   glyph: ㅎ
   app_store_id: "6789067552"
-  privacy_url: https://gist.github.com/krazie99/5ba0e06c88ddc468c94a6aa56c5acd17
   languages: [ko, en]
   # 한글키는 2018년부터 쓰던 커뮤니티가 있다. 지원 창구를 이쪽으로 옮기되 카페는 살려 둔다.
   cafe_url: https://cafe.naver.com/dhkey

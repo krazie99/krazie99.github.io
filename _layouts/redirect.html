@@ -1,7 +1,7 @@
 {% comment %}
-  /<제품>/ 로 들어온 사람을 브라우저 언어에 맞는 페이지로 보낸다.
-  GitHub Pages 는 정적 호스팅이라 서버 302 를 낼 수 없어서 브라우저가 대신 고른다.
-  자바스크립트를 끈 사람에게는 아래 링크가 그대로 보인다.
+  브라우저 언어에 맞는 페이지로 보낸다. front matter 로 product 와 base 를 받는다
+  (`base: /kanaji` · `base: /kanaji/privacy`). GitHub Pages 는 정적 호스팅이라 서버 302 를
+  낼 수 없어서 브라우저가 대신 고른다. 자바스크립트를 끈 사람에게는 아래 링크가 그대로 보인다.
 {% endcomment %}
 {% assign p = site.data.products[page.product] %}
 {% assign fallback = p.languages | first %}
@@ -10,8 +10,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ page.product }} support</title>
-<link rel="canonical" href="{{ site.url }}/{{ page.product }}/{{ fallback }}/">
+<title>{{ page.product }}</title>
+<link rel="canonical" href="{{ site.url }}{{ page.base }}/{{ fallback }}/">
 <meta name="robots" content="noindex">
 <link rel="stylesheet" href="/assets/css/site.css">
 <script>
@@ -25,7 +25,7 @@
         if (code === supported[j]) { pick = supported[j]; break outer; }
       }
     }
-    location.replace("/{{ page.product }}/" + pick + "/");
+    location.replace("{{ page.base }}/" + pick + "/");
   })();
 </script>
 </head>
@@ -36,7 +36,7 @@
       <h1>Support</h1>
       <ul class="links">
         {% for l in p.languages %}
-        <li><a href="/{{ page.product }}/{{ l }}/" hreflang="{{ l }}">{{ site.data.languages[l] }}</a></li>
+        <li><a href="{{ page.base }}/{{ l }}/" hreflang="{{ l }}">{{ site.data.languages[l] }}</a></li>
         {% endfor %}
       </ul>
     </div>

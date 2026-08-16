@@ -1,0 +1,52 @@
+{% comment %}
+  장문 문서(개인정보처리방침 등). 본문은 Markdown 으로 쓰고 이 레이아웃이 껍데기를 씌운다.
+  front matter: product · lang · doc(문서 종류, 언어 전환 링크를 만들 때 쓴다) · title · description
+{% endcomment %}
+{% assign p = site.data.products[page.product] %}
+{% assign key = page.product | append: "_" | append: page.lang %}
+{% assign c = site.data[key] %}
+{% assign path = "/" | append: page.product | append: "/" | append: page.doc | append: "/" | append: page.lang | append: "/" %}
+<!doctype html>
+<html lang="{{ page.lang }}">
+<head>
+{% include head.html title=page.title description=page.description path=path %}
+{% for l in p.languages %}
+<link rel="alternate" hreflang="{{ l }}" href="{{ site.url }}/{{ page.product }}/{{ page.doc }}/{{ l }}/">
+{% endfor %}
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/{{ page.product }}/{{ page.lang }}/">
+      <img src="{{ p.mark }}" alt="" width="40" height="40">
+      <span class="brand-copy">
+        <span class="brand-name">{{ c.product_name }}</span>
+        <span class="brand-note">{{ c.product_note }}</span>
+      </span>
+    </a>
+    <nav class="langs" aria-label="{{ c.labels.language }}">
+      {% for l in p.languages %}
+      <a href="/{{ page.product }}/{{ page.doc }}/{{ l }}/" hreflang="{{ l }}"{% if l == page.lang %} aria-current="page"{% endif %}>{{ site.data.languages[l] }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <article class="doc">
+      {{ content }}
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Sean Choi</span>
+    <a href="/{{ page.product }}/{{ page.lang }}/">{{ c.labels.home }}</a>
+  </div>
+</footer>
+
+</body>
+</html>

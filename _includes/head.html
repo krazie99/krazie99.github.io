@@ -1,15 +1,21 @@
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-
-  <!-- CSS files -->
-  <link rel="stylesheet" href="{{ site.url }}/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{{ site.url }}/css/main.css">
-
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}" />
-</head>
+{% comment %}
+  공통 <head>. include 로 title·description·lang·canonical 을 받는다.
+  레이아웃마다 껍데기를 따로 두지 않으려고 부모 레이아웃 대신 이 include 를 쓴다.
+{% endcomment %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ include.title }}</title>
+<meta name="description" content="{{ include.description }}">
+<link rel="canonical" href="{{ site.url }}{{ include.path }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ include.title }}">
+<meta property="og:description" content="{{ include.description }}">
+<meta property="og:url" content="{{ site.url }}{{ include.path }}">
+{% if include.image %}<meta property="og:image" content="{{ site.url }}{{ include.image }}">{% endif %}
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#f6f5f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#15141a" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/img/favicon.png">
+<link rel="stylesheet" href="/assets/css/site.css">

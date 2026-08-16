@@ -1,0 +1,80 @@
+product_name: HanKey
+product_note: Korean Keyboard
+meta_title: HanKey Support
+meta_description: Setup guide, frequently asked questions, and contact for the HanKey Korean keyboard.
+
+hero_eyebrow: Support
+hero_title: Stuck? Start here.
+hero_body: Answers to the questions we get most about setup, Korean layouts, and Pro features. If none of them fit, email us with the details listed below.
+
+setup_label: First-time setup
+setup_note: Adding the keyboard is not enough on its own — finish all three steps.
+setup_steps:
+  - title: Add the keyboard
+    body: Go to Settings ＞ General ＞ Keyboard ＞ Keyboards ＞ Add New Keyboard and choose “HanKey”.
+  - title: Allow Full Access
+    body: On the same screen, tap “HanKey” and turn on Allow Full Access. Layout changes and themes only take effect once it is on.
+  - title: Switch with the globe key
+    body: In any text field, press and hold the globe (🌐) key and pick HanKey.
+
+faq_label: Frequently asked questions
+faq:
+  - label: Getting started
+    items:
+      - q: HanKey is missing from the keyboard list
+        a: Open the HanKey app once, then go back to Settings ＞ General ＞ Keyboard ＞ Keyboards. If it still does not appear, restart your iPhone and check again.
+      - q: Why does HanKey need Full Access?
+        a: The layout, theme, and settings you pick in the app are saved to storage that the app and the keyboard share. With Full Access off, the keyboard cannot read that storage, so your settings never reach it and it runs with the defaults. <strong>What you type is never sent anywhere.</strong>
+      - q: I changed a setting but the keyboard did not change
+        a: First check that Allow Full Access is on. If it is, close the keyboard and open it again — the new setting is picked up the next time the keyboard opens.
+  - label: Layouts and typing
+    items:
+      - q: How do I change the Korean layout?
+        a: In the app, open <strong>HanKey ＞ Korean keyboard</strong>. Danmoeum, Mui Danmoeum, Korean QWERTY (Dubeolsik), Cheonjiin, Naratgul, and SKY are all available.
+      - q: How do I change the order the globe key cycles through?
+        a: Open <strong>HanKey ＞ Keyboard language switching</strong> in the app and set which keyboards are included and in what order.
+      - q: Can I put my own text on a key?
+        a: Yes. Use the <strong>Secondary keys</strong> tab to assign characters or phrases to individual keys. They appear on a long press or a downward swipe.
+      - q: How do I clear learned word suggestions?
+        a: Go to <strong>Settings ＞ Common · Suggestions ＞ Reset learned word suggestions</strong>. This clears both frequently used words and next-word predictions, and cannot be undone.
+      - q: How do I move the cursor?
+        a: Turn on <strong>Settings ＞ Common · Gestures ＞ Move cursor by swiping the whole keyboard</strong>, then swipe left or right anywhere on the keyboard. While this is on, swiping a single key left or right for compound vowels is unavailable — the two gestures share the same axis.
+  - label: HanKey Pro
+    items:
+      - q: What does Pro unlock?
+        a: Typo correction, the Japanese keyboard, Hanja conversion, translation, kaomoji and decorated text, and the clipboard. <strong>It is a one-time purchase.</strong> Korean input, themes, and fonts stay free.
+      - q: How do I restore my purchase?
+        a: Sign in to the App Store with the same Apple Account you bought it with, then open <strong>👑 Unlock Pro</strong> in the app and tap Restore Purchase.
+      - q: The translate button does nothing
+        a: Translation needs all three of <strong>iOS 26 or later, HanKey Pro, and an installed language pack</strong>. Download the language pack from the Translation language screen in the app — the keyboard extension cannot download it.
+      - q: Does typo correction change my text automatically?
+        a: No. It rewrites the sentence in front of the cursor and offers it as a candidate; nothing changes until you pick one. A wrong automatic fix costs more trust than a missed one.
+  - label: Themes
+    items:
+      - q: How do I import a theme?
+        a: Copy a theme from the theme-sharing board in the community cafe, then open the <strong>Themes/Keyboard</strong> tab in the app and tap Import theme.
+  - label: Privacy
+    items:
+      - q: Is what I type sent to a server?
+        a: No. Conversion, learning, typo correction, and translation all run on your iPhone. Translation uses Apple's on-device translation, so it does not go over the network either. We do collect anonymous usage statistics such as screen views and crashes, and those are never tied to what you type.
+      - q: Where is my learned data and clipboard history stored?
+        a: On your iPhone only. Deleting the app deletes them with it.
+
+contact_title: Still stuck?
+contact_body: Include the details below and we can look into it right away. Please do not send text you typed, passwords, or other personal information.
+contact_checklist:
+  - HanKey version
+  - iPhone model and iOS version
+  - The steps that led to the problem
+  - A screenshot, if you can take one
+contact_action: Email support
+
+links_label: Related links
+labels:
+  app_store: View on the App Store
+  privacy: Privacy Policy
+  cafe: Community cafe (Korean)
+  cafe_qna: Q&A board (Korean)
+  cafe_theme: Theme sharing board (Korean)
+  home: Support home
+  language: Language

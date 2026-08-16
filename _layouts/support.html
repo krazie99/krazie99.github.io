@@ -1,0 +1,116 @@
+{% comment %}
+  제품 지원 페이지. front matter 로 product(kanaji|hankey)와 lang 을 받고,
+  문구는 _data/<product>_<lang>.yml 에서 통째로 읽는다. 마크업은 이 한 장뿐이다.
+{% endcomment %}
+{% assign p = site.data.products[page.product] %}
+{% assign key = page.product | append: "_" | append: page.lang %}
+{% assign c = site.data[key] %}
+{% assign path = "/" | append: page.product | append: "/" | append: page.lang | append: "/" %}
+<!doctype html>
+<html lang="{{ page.lang }}">
+<head>
+{% include head.html title=c.meta_title description=c.meta_description path=path image=p.mark %}
+{% for l in p.languages %}
+<link rel="alternate" hreflang="{{ l }}" href="{{ site.url }}/{{ page.product }}/{{ l }}/">
+{% endfor %}
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="{{ path }}">
+      <img src="{{ p.mark }}" alt="" width="40" height="40">
+      <span class="brand-copy">
+        <span class="brand-name">{{ c.product_name }}</span>
+        <span class="brand-note">{{ c.product_note }}</span>
+      </span>
+    </a>
+    <nav class="langs" aria-label="{{ c.labels.language }}">
+      {% for l in p.languages %}
+      <a href="/{{ page.product }}/{{ l }}/" hreflang="{{ l }}"{% if l == page.lang %} aria-current="page"{% endif %}>{{ site.data.languages[l] }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <p class="eyebrow">{{ c.hero_eyebrow }}</p>
+      <h1>{{ c.hero_title }}</h1>
+      <p>{{ c.hero_body }}</p>
+      <a class="button" href="https://apps.apple.com/app/id{{ p.app_store_id }}">{{ c.labels.app_store }}</a>
+      <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+
+    <section id="setup" aria-labelledby="setup-label">
+      <p class="section-label" id="setup-label">{{ c.setup_label }}</p>
+      <ol class="steps">
+        {% for step in c.setup_steps %}
+        <li>
+          <span class="step-no">{{ forloop.index }}</span>
+          <h3>{{ step.title }}</h3>
+          <p>{{ step.body }}</p>
+        </li>
+        {% endfor %}
+      </ol>
+      <p class="section-note">{{ c.setup_note }}</p>
+    </section>
+
+    <section id="faq" aria-labelledby="faq-label">
+      <p class="section-label" id="faq-label">{{ c.faq_label }}</p>
+      {% for group in c.faq %}
+      <div class="faq-group">
+        <h3>{{ group.label }}</h3>
+        <div class="faq-list">
+          {% for item in group.items %}
+          <details>
+            <summary>{{ item.q }}</summary>
+            <p class="answer">{{ item.a }}</p>
+          </details>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="contact">
+        <div>
+          <h2 id="contact-title">{{ c.contact_title }}</h2>
+          <p>{{ c.contact_body }}</p>
+          <a class="mail" href="mailto:{{ site.email }}?subject={{ c.product_name | uri_escape }}">
+            <span>{{ c.contact_action }}</span>
+            <strong>{{ site.email }}</strong>
+          </a>
+        </div>
+        <ul class="checklist">
+          {% for item in c.contact_checklist %}<li>{{ item }}</li>{% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <section id="links" aria-labelledby="links-label">
+      <p class="section-label" id="links-label">{{ c.links_label }}</p>
+      <ul class="links">
+        <li><a href="{{ p.privacy_url }}">{{ c.labels.privacy }}</a></li>
+        <li><a href="https://apps.apple.com/app/id{{ p.app_store_id }}">{{ c.labels.app_store }}</a></li>
+        {% if p.cafe_url %}
+        <li><a href="{{ p.cafe_url }}">{{ c.labels.cafe }}</a></li>
+        <li><a href="{{ p.cafe_qna_url }}">{{ c.labels.cafe_qna }}</a></li>
+        <li><a href="{{ p.cafe_theme_url }}">{{ c.labels.cafe_theme }}</a></li>
+        {% endif %}
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Sean Choi</span>
+    <a href="/">{{ c.labels.home }}</a>
+  </div>
+</footer>
+
+</body>
+</html>

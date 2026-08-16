@@ -1,72 +1,16 @@
-#
-###################################
-# Site wide configuration
-####################################
-#
-title: Sean the iOS Developer
-email:
-description: Sean Choi
-categories: [portfolio]
-# the base hostname & protocol for your site
-# If your project is placed in https://github.com/yourname/yourname.github.io at master branch
-# Then, the 'url' is: http://yourname.github.io
-# If your project is placed in another repository as a gh-pages branch, like: https://github.com/yourname/projectname
-# Then, the 'url' is: http://yourname.github.io/projectname
-url: https://letsean.dev  # https protocol 포함
-enforce_ssl: letsean.dev   # protocol 없이
-#
-###################################
-# Jekyll configuration
-####################################
-#
-markdown:    kramdown
-highlighter:  rouge
-excerpt_separator: <!--more-->
+title: letsean 지원
+description: 한글키·카나지 고객지원 사이트
+url: https://letsean.dev
+email: support@letsean.dev
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: false
+# 지원 페이지는 데이터(_data/<제품>_<언어>.yml) + 레이아웃 한 벌로 찍어낸다.
+# 제품이나 언어를 늘릴 때 손대는 곳은 _data 와 stub 한 장뿐이다.
+markdown: kramdown
+encoding: utf-8
+timezone: Asia/Seoul
 
-#
-###################################
-# Site Owner configuration
-####################################
-#
-disqus:
-  id: "krazie99@gmail.com"
-
-owner:
-  name: Sean Choi
-  avatar: profile_s.png
-  job: "iOS Developer"
-  bio: "Objective-C and Swift"
-  email: krazie99@gmail.com
-  disqus-shortname: sean-choi-ios-developer
-  twitter: krazie99
-  facebook: krazie99
-  google:
-    plus:
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: krazie99
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,49 @@
+{% comment %}
+  지원 홈. 제품이 늘면 _data/products.yml 과 아래 목록에 한 줄씩 는다.
+  문구는 제품 이름과 언어 버튼뿐이라 어느 한 언어로 쓰지 않는다.
+{% endcomment %}
+<!doctype html>
+<html lang="ko">
+<head>
+{% include head.html title="letsean 지원 · Support" description="한글키·카나지 고객지원. 설정 방법과 자주 묻는 질문, 문의 안내." path="/" %}
+</head>
+<body>
+
+<main>
+  <div class="wrap">
+    <div class="hub-head">
+      <h1>Support</h1>
+      <p>{{ page.subtitle }}</p>
+      <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+    </div>
+
+    <section>
+      <ul class="cards">
+        {% for entry in page.products %}
+        {% assign p = site.data.products[entry.slug] %}
+        {% assign c = site.data[entry.data] %}
+        <li class="card">
+          <img src="{{ p.mark }}" alt="" width="62" height="62">
+          <h2>{{ c.product_name }}</h2>
+          <p>{{ c.product_note }}</p>
+          <ul class="links">
+            {% for l in p.languages %}
+            <li><a href="/{{ entry.slug }}/{{ l }}/" hreflang="{{ l }}">{{ site.data.languages[l] }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Sean Choi</span>
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </div>
+</footer>
+
+</body>
+</html>

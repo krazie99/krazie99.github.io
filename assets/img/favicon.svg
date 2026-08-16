@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 앱 아이콘 아래에 있는 키 세 개. 두 제품이 공유하는 유일한 표식이다. -->
+  <rect width="64" height="64" rx="14" fill="#f6f5f0"/>
+  <rect x="12" y="27" width="12" height="12" rx="3.5" fill="#2e2c36"/>
+  <rect x="26" y="27" width="12" height="12" rx="3.5" fill="#c7c6c0"/>
+  <rect x="40" y="27" width="12" height="12" rx="3.5" fill="#c7c6c0"/>
+</svg>

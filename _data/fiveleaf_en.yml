@@ -1,0 +1,89 @@
+product_name: FiveLeaf
+product_note: Five letters a day
+meta_title: FiveLeaf Support
+meta_description: How to use FiveLeaf, the diary that keeps each day in five letters — setup, questions, and how to get in touch.
+
+hero_eyebrow: Support
+hero_title: Answers, right here.
+hero_body: How to write your five, how to add a photo or a five-second clip, and how to keep your memories safe. If you don't find it here, send us the details below.
+
+setup_label: Getting started
+setup_note: Three things are enough for your first day.
+setup_steps:
+  - title: Write today in five
+    body: On Today, write the five letters of your day. Once five are there, you can save. One entry per day.
+  - title: Add a photo or a clip
+    body: After saving you can add one photo or one five-second video — from your library, the camera, or a sheet of paper. One per day.
+  - title: Make a backup
+    body: Settings ＞ Back Up My Memories writes a backup to the FiveLeaf folder in your iCloud Drive. That file is how your memories move to a new phone.
+
+faq_label: Questions
+faq:
+  - label: Writing
+    items:
+      - q: Why five letters?
+        a: To keep it short. When you can write at length you start trying to write <em>well</em>, and trying is what makes people stop after a week. Five letters is <strong>choosing</strong>, not composing — that you can do every day.
+      - q: Can I write more than once a day?
+        a: No. One entry per day. On a day you've already written, you can edit that entry instead.
+      - q: How long can I edit?
+        a: Until <strong>noon the next day</strong>. Write at midnight and you still have the morning to change your mind. Deleting is always possible.
+      - q: The counter seems off
+        a: Letters still being composed (unfinished Hangul or Japanese) aren't counted until they're complete. An emoji counts as the one character you see.
+      - q: Can I fill in a past date?
+        a: No. There's no way to backfill. An empty day is that day's record too.
+  - label: Photos and video
+    items:
+      - q: How long can a video be?
+        a: <strong>Five seconds.</strong> Pick something longer and you choose the five-second window yourself. Sound is kept.
+      - q: Can I add both a photo and a video?
+        a: No — a day holds <strong>one</strong> of them. Adding a new one replaces what was there.
+      - q: Does a filter change the original?
+        a: No. The original is kept as it is and the filter is applied when it's shown. Change the filter later, or remove it, and the original is untouched.
+      - q: What about days without a photo?
+        a: That's fine. You can choose a sheet of paper instead, or nothing at all.
+  - label: Keeping your memories
+    items:
+      - q: Do my memories follow me to a new phone?
+        a: <strong>Not on their own.</strong> They live on this device only. Before you switch, use <strong>Settings ＞ Back Up My Memories</strong>, then on the new phone tap <strong>Restore from iCloud Drive</strong>.
+      - q: Where does the backup go?
+        a: The FiveLeaf folder in your iCloud Drive. You can see it in the Files app, and <strong>it stays there even if you delete the app.</strong> One backup is kept — a new one replaces the last.
+      - q: How often should I back up?
+        a: There's no schedule. On the first of each month a note arrives about the month behind you, and if you haven't backed up that month it mentions that too.
+      - q: Does restoring erase what I have?
+        a: No. Restoring only <strong>adds.</strong> If a day is already there it's skipped and left exactly as it is. At the end you're told how many came back and how many were left alone.
+      - q: Can I keep a backup somewhere else?
+        a: <strong>Settings ＞ Export My Memories</strong> hands you the same file to put anywhere. Opening that file with FiveLeaf restores from it.
+      - q: What's inside a backup?
+        a: Everything — letters, photos, video, times, places, colors. <code>memories.json</code> is plain text and the media are ordinary files, so nothing needs FiveLeaf to open. Rename it to <code>.zip</code> and it unpacks anywhere.
+  - label: Locking and reminders
+    items:
+      - q: Can I hide one entry?
+        a: Lock it from its detail screen. A locked day hides its letters, photo, time, and place, and asks for Face ID or your passcode to open.
+      - q: Can I change the reminder time?
+        a: <strong>Settings ＞ Daily Reminder</strong> sets the time or turns it off. It starts at 9 in the evening.
+      - q: I'm not getting reminders
+        a: Check iPhone Settings ＞ Notifications ＞ FiveLeaf. If you declined at first, that's where you can allow them again.
+  - label: Privacy
+    items:
+      - q: Do my entries go to a server?
+        a: No. There is no server. Your memories stay on this device, and reach your iCloud Drive only when you make a backup — only when you tap it.
+      - q: How does it know the place?
+        a: On days you allow location, the coordinates go to Apple's map service to get a <strong>city name</strong> back. The coordinates and the name are stored with that entry and go nowhere else.
+      - q: What happens if I delete the app?
+        a: The memories on this device go with it. <strong>The backup in your iCloud Drive stays.</strong>
+
+contact_title: Still stuck?
+contact_body: Send these along and we can find the cause quickly. Please don't include the contents of your entries or any personal details.
+contact_checklist:
+  - Your FiveLeaf version (Settings ＞ About)
+  - iPhone model and iOS version
+  - What you did, step by step
+  - A screenshot if you have one
+contact_action: Send an email
+
+links_label: Links
+labels:
+  app_store: View on the App Store
+  privacy: Privacy Policy
+  home: Support home
+  language: Language

@@ -39,7 +39,14 @@
       <p class="eyebrow">{{ c.hero_eyebrow }}</p>
       <h1>{{ c.hero_title }}</h1>
       <p>{{ c.hero_body }}</p>
+      {%- comment -%}
+        출시 전 제품은 App Store 주소가 없다. 빈 값을 그대로 붙이면
+        `…/app/id` 로 끝나는 죽은 링크가 나간다 — 누르면 애플의 오류 화면이다.
+        없으면 버튼을 내린다.
+      {%- endcomment -%}
+      {% if p.app_store_id != "" %}
       <a class="button" href="https://apps.apple.com/app/id{{ p.app_store_id }}">{{ c.labels.app_store }}</a>
+      {% endif %}
       <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
     </div>
 
@@ -94,7 +101,9 @@
       <p class="section-label" id="links-label">{{ c.links_label }}</p>
       <ul class="links">
         <li><a href="/{{ page.product }}/privacy/{{ page.lang }}/">{{ c.labels.privacy }}</a></li>
+        {% if p.app_store_id != "" %}
         <li><a href="https://apps.apple.com/app/id{{ p.app_store_id }}">{{ c.labels.app_store }}</a></li>
+        {% endif %}
         {% if p.cafe_url %}
         <li><a href="{{ p.cafe_url }}">{{ c.labels.cafe }}</a></li>
         <li><a href="{{ p.cafe_qna_url }}">{{ c.labels.cafe_qna }}</a></li>

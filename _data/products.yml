@@ -16,3 +16,11 @@ hankey:
   cafe_url: https://cafe.naver.com/dhkey
   cafe_qna_url: https://m.cafe.naver.com/ArticleList.nhn?search.clubid=27764144&search.menuid=21&search.boardtype=L
   cafe_theme_url: https://m.cafe.naver.com/ArticleList.nhn?search.clubid=27764144&search.menuid=5&search.boardtype=L
+
+fiveleaf:
+  slug: fiveleaf
+  mark: /assets/img/fiveleaf-mark.png
+  glyph: 다
+  # 출시 전이라 아직 없다. App Store 심사를 통과하면 채운다.
+  app_store_id: ""
+  languages: [ko, en, ja]

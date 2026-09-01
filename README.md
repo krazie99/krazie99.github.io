@@ -8,7 +8,22 @@
 | `letsean.dev/` | 제품 목록 |
 | `letsean.dev/kanaji/ja` · `/kanaji/ko` | 카나지 (일본어 키보드) |
 | `letsean.dev/hankey/ko` · `/hankey/en` | 한글키 (한글 키보드) |
+| `letsean.dev/fiveleaf/ko` · `/en` · `/ja` | 「다섯 글자」 (FiveLeaf) — **홈 목록에는 없다**, 아래 |
+| `letsean.dev/fiveleaf/privacy/<언어>` | 그 앱의 개인정보 처리방침 |
 | `letsean.dev/<제품>/` | 브라우저 언어에 맞는 쪽으로 보낸다 |
+
+## ⚠️ 출시 전인 앱은 홈에 세우지 않는다
+
+**「다섯 글자」(FiveLeaf)가 지금 그렇다.** 루트 `index.html` 의 `products` 에서
+주석 처리해 뒀다 — App Store 에 없는 앱을 목록에서 고르게 하면 막다른 길이다.
+
+**페이지 자체는 살아 있다.** `/fiveleaf/ko/` 도 `/fiveleaf/privacy/ko/` 도 그대로
+열린다. App Store Connect 는 지원 URL 과 개인정보 처리방침 URL 을 **필수**로
+요구하고 심사는 그 주소로 직접 오므로, 홈에서 감춰도 제출에는 지장이 없다.
+오히려 아직 살 수 없는 앱을 목록에 세우는 쪽이 방문자에게 불친절하다.
+
+**출시하면 그 두 줄의 주석을 걷는다.** FiveLeaf 저장소의 `CLAUDE.md` M10 항목에도
+같은 말이 적혀 있다 — 두 곳 중 한 곳만 보고도 되살릴 수 있게 해 둔 것이다.
 
 ## 구조
 
@@ -35,6 +50,16 @@ assets/css/site.css         공통 스타일 (라이트·다크)
 
 위 네 가지에 더해 `_data/products.yml` 에 항목을, 루트 `index.html` 의 `products` 에 한 줄을 넣고,
 앱 아이콘을 `assets/img/<제품>-mark.png` 로 넣는다(512px 정도).
+
+## 상단 바 — 언어 이름표가 접히면 원이 된다
+
+`.langs a` 의 `white-space: nowrap` 을 **지우지 말 것.** 없으면 좁은 폭에서
+「한국어」가 「한국 / 어」로 접히고, `border-radius: 999px` 가 그 두 줄짜리 상자를
+**큰 원**으로 만든다(실기기에서 그렇게 나왔다). 글자 크기의 문제가 아니라
+줄바꿈의 문제다.
+
+560px 아래에서는 **브랜드가 양보한다** — 아이콘이 작아지고 부제가 접힌다.
+언어 이름표 셋은 한 줄에 서야 고를 수 있고, 브랜드는 이미 고른 것을 말할 뿐이다.
 
 ## 색
 

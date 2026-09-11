@@ -10,15 +10,15 @@ description: "What FiveLeaf handles, and what it does not."
 
 # FiveLeaf Privacy Policy
 
-Last updated: August 31, 2026
+Last updated: September 11, 2026
 
 FiveLeaf is an iOS diary that keeps each day in five letters. This policy explains what the app handles and what it does not.
 
-## 1. There is no server
+## 1. The developer runs no server
 
-FiveLeaf has no account, no sign-in screen, and no server run by the developer. What you write — the five letters, photos, video, times, places, colors — is stored **on your iPhone**.
+FiveLeaf has no account, no sign-in screen, and no server run by the developer. What you write — the five letters, photos, video, times, places, weather, colors, letters — is stored **on your iPhone**.
 
-The developer has no means of receiving any of it.
+The developer has no means of receiving any of it. The only things the app sends off the device are the coordinates in section 3 and the crash and usage reports in section 6.
 
 ## 2. Backups go only to your iCloud
 
@@ -28,13 +28,13 @@ The developer has no means of receiving any of it.
 - **Settings ＞ Export My Memories** hands you the same file to save or send wherever you like. Where it goes after that is your choice.
 - Deleting the app does not delete the backup in iCloud Drive. Remove it yourself in the Files app if you want it gone.
 
-## 3. Location — coordinates are used only to get a city name
+## 3. Location — coordinates are used only to get a city name and the weather
 
-Recording a place requires location permission. **Only when you allow it**, the coordinates at that moment are sent to Apple's geocoding service to get a **city name** back. That exchange is with Apple and is governed by Apple's privacy policy.
+Recording a place requires location permission. **Only when you allow it**, the coordinates at that moment are sent to Apple's services to get back a **city name** (geocoding) and **the weather at that moment** (WeatherKit). That exchange is with Apple and is governed by Apple's privacy policy.
 
-The city name and coordinates are stored with that entry and go nowhere else. You can edit or remove the place at any time.
+The city name, the weather, and the coordinates are stored with that entry and go nowhere else. You can edit or remove the place at any time.
 
-Every feature of the app works without location permission.
+Every feature of the app works without location permission — the place and the weather are simply left empty.
 
 ## 4. Photos and camera
 
@@ -46,22 +46,33 @@ What comes in is stored on the device and is included in a backup when you make 
 
 Locking an entry means Face ID or your device passcode is checked when it is opened. **The check completes inside your iPhone**; the app receives only whether it succeeded. Biometric data is never given to the app and is never stored.
 
-## 6. What is not collected
+## 6. Crash reports and usage analytics
+
+To know whether the app is crashing and which screens are actually used, FiveLeaf uses Google's Firebase. Only the two things below leave the device, and **the contents of your entries are not among them.**
+
+- **Crash reports** (Firebase Crashlytics) — when the app terminates unexpectedly, your iPhone model, your iOS version, and the call stack at the point it stopped are sent.
+- **Usage analytics** (Firebase Analytics) — the **kind of action** taken, such as "a screen was opened." The five letters you wrote, your photos, video, places, and letters are **never sent.**
+
+In both cases an **app instance identifier**, created when the app is installed, is sent along with it. It does not say who you are, and it disappears when you delete the app. No advertising identifier (IDFA) is used, and your activity in other apps or on websites is not tracked.
+
+That exchange is with Google and is governed by Google's privacy policy.
+
+## 7. What is not collected
 
 - Identifying information such as name, email, or phone number
 - Advertising identifiers, tracking, or advertising
 - The contents of your entries
 
-FiveLeaf does not hand any information to other companies or services.
+The only things FiveLeaf sends to another company are the coordinates in section 3 and the crash and usage reports in section 6.
 
-## 7. Children
+## 8. Children
 
 FiveLeaf is not directed at any particular age group and does not knowingly collect personal information from children.
 
-## 8. Changes to this policy
+## 9. Changes to this policy
 
 If what the app handles changes, this document is updated and the date above changes with it. Any change that adds to what is collected will be announced alongside the app update.
 
-## 9. Contact
+## 10. Contact
 
 <support@letsean.dev>

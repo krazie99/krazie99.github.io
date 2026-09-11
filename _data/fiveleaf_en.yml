@@ -66,9 +66,9 @@ faq:
   - label: Privacy
     items:
       - q: Do my entries go to a server?
-        a: No. There is no server. Your memories stay on this device, and reach your iCloud Drive only when you make a backup — only when you tap it.
+        a: No. There is no server run by the developer. Your memories stay on this device, and reach your iCloud Drive only when you make a backup — only when you tap it. What does leave the app is the coordinates used for the place and the weather, plus crash and usage reports — <strong>never the contents of your entries.</strong>
       - q: How does it know the place?
-        a: On days you allow location, the coordinates go to Apple's map service to get a <strong>city name</strong> back. The coordinates and the name are stored with that entry and go nowhere else.
+        a: On days you allow location, the coordinates go to Apple's services to get a <strong>city name</strong> and the <strong>weather</strong> at that moment back. The coordinates, the name and the weather are stored with that entry and go nowhere else.
       - q: What happens if I delete the app?
         a: The memories on this device go with it. <strong>The backup in your iCloud Drive stays.</strong>
 

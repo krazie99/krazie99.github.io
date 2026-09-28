@@ -1,0 +1,14 @@
+한국어 추가 사전 (letsean.dev/dict/ko-*.bin)
+
+이 사전 파일은 크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스(CC BY-SA 4.0)로
+배포합니다. https://creativecommons.org/licenses/by-sa/4.0/
+
+아래 자료에서 단어를 골라 빈도 순위를 매기고 SQLite 로 형식을 바꿨습니다.
+
+- 국립국어원 우리말샘 — CC BY-SA 2.0 KR
+  https://opendict.korean.go.kr (원본 사본: https://github.com/spellcheck-ko/korean-dict-nikl)
+- FrequencyWords — Copyright (c) 2016 Hermit Dave, 데이터는 CC BY-SA 4.0
+  https://github.com/hermitdave/FrequencyWords
+  원 말뭉치: OpenSubtitles.org (https://www.opensubtitles.org), P. Lison and J. Tiedemann, 2016
+- Kiwi 형태소 빈도 — Copyright (c) bab2min, Apache License 2.0
+  https://github.com/bab2min/Kiwi

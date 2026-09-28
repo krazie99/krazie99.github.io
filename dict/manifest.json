@@ -1,0 +1,22 @@
+{
+  "dictionaries": {
+    "ja": {
+      "installedSize": 120520704,
+      "minAppVersion": "4.6.0",
+      "schema": 1,
+      "sha256": "26766befb795d59b53bdf3b27946d20b901c863b656e343d8ea759cd9bfc28af",
+      "size": 38142029,
+      "url": "https://letsean.dev/dict/ja-2026.10.01.bin",
+      "version": "2026.10.01"
+    },
+    "ko": {
+      "installedSize": 34893824,
+      "minAppVersion": "4.6.0",
+      "schema": 1,
+      "sha256": "98127ad5f585d95a24222eb2eb2365f9cad6b65ef1d52a2d38b06e6af650a4ed",
+      "size": 11718572,
+      "url": "https://letsean.dev/dict/ko-2026.10.01.bin",
+      "version": "2026.10.01"
+    }
+  }
+}

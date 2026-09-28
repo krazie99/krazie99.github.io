@@ -21,6 +21,5 @@ fiveleaf:
   slug: fiveleaf
   mark: /assets/img/fiveleaf-mark.png
   glyph: 다
-  # 출시 전이라 아직 없다. App Store 심사를 통과하면 채운다.
-  app_store_id: ""
+  app_store_id: "6807654566"
   languages: [ko, en, ja]

@@ -60,10 +60,12 @@ contact_checklist:
   - 문제가 생기기까지의 순서
   - 가능하면 화면 스크린샷
 contact_action: 이메일로 문의하기
+contact_discord: 질문과 테마 공유는 커뮤니티에서도
 
 links_label: 관련 링크
 labels:
   app_store: App Store에서 보기
   privacy: 개인정보 처리방침
+  discord: 테마 공유 커뮤니티(Discord)
   home: 지원 홈
   language: 언어

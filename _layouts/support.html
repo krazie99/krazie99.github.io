@@ -90,6 +90,14 @@
             <span>{{ c.contact_action }}</span>
             <strong>{{ site.email }}</strong>
           </a>
+          {% if p.discord_url %}
+          <div>
+            <a class="mail" href="{{ p.discord_url }}">
+              <span>{{ c.contact_discord }}</span>
+              <strong>Discord</strong>
+            </a>
+          </div>
+          {% endif %}
         </div>
         <ul class="checklist">
           {% for item in c.contact_checklist %}<li>{{ item }}</li>{% endfor %}
@@ -103,6 +111,9 @@
         <li><a href="/{{ page.product }}/privacy/{{ page.lang }}/">{{ c.labels.privacy }}</a></li>
         {% if p.app_store_id != "" %}
         <li><a href="https://apps.apple.com/app/id{{ p.app_store_id }}">{{ c.labels.app_store }}</a></li>
+        {% endif %}
+        {% if p.discord_url %}
+        <li><a href="{{ p.discord_url }}">{{ c.labels.discord }}</a></li>
         {% endif %}
         {% if p.cafe_url %}
         <li><a href="{{ p.cafe_url }}">{{ c.labels.cafe }}</a></li>

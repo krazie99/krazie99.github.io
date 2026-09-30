@@ -60,10 +60,12 @@ contact_checklist:
   - 起きるまでの操作の順番
   - できれば画面のスクリーンショット
 contact_action: メールで問い合わせる
+contact_discord: 質問やテーマの共有はコミュニティでも
 
 links_label: 関連リンク
 labels:
   app_store: App Store で見る
   privacy: プライバシーポリシー
+  discord: テーマ共有コミュニティ(Discord)
   home: サポートのトップ
   language: 言語

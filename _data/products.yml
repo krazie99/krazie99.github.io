@@ -4,6 +4,7 @@ kanaji:
   mark: /assets/img/kanaji-mark.png
   glyph: か
   app_store_id: "6801812576"
+  discord_url: https://discord.gg/wZMVrQeyGY
   languages: [ja, ko]
 
 hankey:

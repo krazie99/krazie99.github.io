@@ -10,7 +10,7 @@ description: "What FiveLeaf handles, and what it does not."
 
 # FiveLeaf Privacy Policy
 
-Last updated: September 11, 2026
+Last updated: October 7, 2026
 
 FiveLeaf is an iOS diary that keeps each day in five letters. This policy explains what the app handles and what it does not.
 
@@ -18,15 +18,21 @@ FiveLeaf is an iOS diary that keeps each day in five letters. This policy explai
 
 FiveLeaf has no account, no sign-in screen, and no server run by the developer. What you write — the five letters, photos, video, times, places, weather, colors, letters — is stored **on your iPhone**.
 
-The developer has no means of receiving any of it. The only things the app sends off the device are the coordinates in section 3 and the crash and usage reports in section 6.
+The developer has no means of receiving any of it. The only things the app sends off the device are the coordinates in section 3, the crash and usage reports in section 6, and — **only if you turn it on** — the auto sync in section 2.
 
-## 2. Backups go only to your iCloud
+## 2. Backups and sync go only to your iCloud
 
 **Settings ＞ Back Up My Memories** writes a single file holding all of your entries into **your iCloud Drive**. That file lives inside your Apple account; the developer cannot reach it.
 
 - A backup is made **only when you tap it.** Nothing happens automatically.
 - **Settings ＞ Export My Memories** hands you the same file to save or send wherever you like. Where it goes after that is your choice.
 - Deleting the app does not delete the backup in iCloud Drive. Remove it yourself in the Files app if you want it gone.
+
+If you turn on **Auto Sync** (FiveLeaf Plus), your entries are uploaded to **your private iCloud database** and kept in step with your other devices signed in to the same Apple account. This exchange is between you and Apple and is governed by Apple's privacy policy. The developer cannot see that database.
+
+- Auto Sync runs **only when you turn it on.** It starts off, and you can turn it off anytime in **Settings ＞ Auto Sync**.
+- Turning it off, or your subscription ending, stops the sync. Your entries stay on the device, and the copy already in iCloud stays too.
+- To remove the copy in iCloud, delete this app's data in iOS **Settings ＞ Apple Account ＞ iCloud ＞ Manage Storage**.
 
 ## 3. Location — coordinates are used only to get a city name and the weather
 
@@ -63,7 +69,7 @@ That exchange is with Google and is governed by Google's privacy policy.
 - Advertising identifiers, tracking, or advertising
 - The contents of your entries
 
-The only things FiveLeaf sends to another company are the coordinates in section 3 and the crash and usage reports in section 6.
+The only things FiveLeaf sends to another company are the coordinates in section 3, the crash and usage reports in section 6, and — if you turn it on — the auto sync in section 2 (to your own iCloud).
 
 ## 8. Children
 

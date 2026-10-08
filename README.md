@@ -51,6 +51,17 @@ assets/css/site.css         공통 스타일 (라이트·다크)
 위 네 가지에 더해 `_data/products.yml` 에 항목을, 루트 `index.html` 의 `products` 에 한 줄을 넣고,
 앱 아이콘을 `assets/img/<제품>-mark.png` 로 넣는다(512px 정도).
 
+## `apps.json` — 앱 안의 「추천 앱」 목록
+
+`letsean.dev/apps.json` 은 **손으로 쓰는 파일**이다. 집에갈래(WannaGoHome)가 통계 탭
+광고 자리에 우리 앱을 띄울 때 하루 한 번 읽는다. `_data/products.yml` 과 따로 둔다.
+
+- `live: false` 인 앱은 앱 안에 나오지 않는다. **「다섯 글자」가 심사를 통과하면
+  `fiveleaf` 의 `live` 를 `true` 로 바꾼다** — 앱 업데이트 없이 다음 날부터 나온다
+- `languages` 에 있는 언어의 `name`·`tagline` 이 모두 있어야 그 언어에서 나온다
+- 형식을 바꾸면 `version` 을 올린다. 앱은 모르는 `version` 을 무시하고 가진 사본을 쓴다
+- 집에갈래 저장소 `App/Resources/apps.json` 에 같은 파일이 번들돼 있다(첫 실행·오프라인용)
+
 ## 상단 바 — 언어 이름표가 접히면 원이 된다
 
 `.langs a` 의 `white-space: nowrap` 을 **지우지 말 것.** 없으면 좁은 폭에서

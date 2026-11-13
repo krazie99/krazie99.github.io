@@ -1,10 +1,10 @@
 {
   "apps": {
     "hankey": {
-      "version": "4.8.1"
+      "version": "4.8.2"
     },
     "kanaji": {
-      "version": "1.5.1"
+      "version": "1.5.2"
     }
   },
   "dictionaries": {

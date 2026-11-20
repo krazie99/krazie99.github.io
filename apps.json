@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "apps": [
+    { "id": "hankey", "appStoreId": "6789067552", "live": true, "languages": ["ko", "en"],
+      "icon": "https://letsean.dev/assets/img/hankey-mark.png",
+      "name": { "ko": "한글키", "en": "HanKey" },
+      "tagline": { "ko": "손에 익은 한글 자판", "en": "The Korean keyboard that fits your thumbs" } },
+    { "id": "kanaji", "appStoreId": "6801812576", "live": true, "languages": ["ja"],
+      "icon": "https://letsean.dev/assets/img/kanaji-mark.png",
+      "name": { "ja": "カナジ" },
+      "tagline": { "ja": "指になじむ日本語キーボード" } },
+    { "id": "fiveleaf", "appStoreId": "6807654566", "live": false, "languages": ["ko", "en", "ja"],
+      "icon": "https://letsean.dev/assets/img/fiveleaf-mark.png",
+      "name": { "ko": "다섯 글자", "en": "FiveLeaf", "ja": "五文字" },
+      "tagline": { "ko": "하루를 다섯 글자로", "en": "Your day in five letters", "ja": "一日を五文字で" } }
+  ]
+}
